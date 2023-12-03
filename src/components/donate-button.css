@@ -1,0 +1,19 @@
+.call-to-action {
+    flex: 1;
+  }
+  
+  /* Button styles */
+  button {
+    margin-left: 1150px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #27ae60;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #2ecc71;
+  }

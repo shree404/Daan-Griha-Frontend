@@ -1,0 +1,17 @@
+.background-img {
+  display: flex;
+  margin-left: 800px;
+  width: 400px;
+  height: 380px;
+  overflow: hidden;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 2;
+  z-index: -1;
+}

@@ -1,0 +1,62 @@
+.nav-bar {
+  display: inline-block;
+  margin-top: 0px;
+}
+.nav-bar:hover {
+  display: inline-block;
+}
+#signup {
+  margin: 40px;
+  display: inline-block;
+}
+#login {
+  margin: 40px;
+  display: inline-block;
+}
+#home {
+  margin: 40px;
+  display: inline-block;
+}
+#about {
+  margin: 40px;
+  display: inline-block;
+}
+#contact {
+  margin: 40px;
+  display: inline-block;
+}
+
+#signup:hover {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  color: navy;
+  font-size: larger;
+  transform: scale(2, 2);
+}
+#login:hover {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  color: navy;
+  transform: scale(2, 2);
+  font-size: large;
+}
+#home:hover {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  font-style: inherit;
+  color: navy;
+  transform: scale(2, 2);
+}
+#about:hover {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transform: scale(2, 2);
+  font-size: x-large;
+  color: navy;
+}
+#contact:hover {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: larger;
+  color: navy;
+  transform: scale(2, 2);
+}

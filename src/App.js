@@ -1,16 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
+import React from "react";
+import Nav from "./components/nav";
+import LandingPage from "./components/landingPage";
+import Background from "./components/background";
+import Donate from "./components/donate-button";
 
 function App() {
   return (
-    <div class="nav-bar">
-      <p id="signup">Signup</p>
-      <p id="login">Login</p>
-      <p id="home">Home</p>
-      <p id="about">About</p>
-      <p id="contact">Contact</p>
+    <div>
+     <Nav/>
+      <Donate />
+     
+      <div className="landingpage">
+        <LandingPage />
+      </div>
+      <Background />
     </div>
   );
 }
-
 export default App;
