@@ -33,13 +33,38 @@
   font-size: larger;
   transform: scale(2, 2);
 }
+#signup:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease;
+}
+#signup:hover:after {
+  width: 100%;
+}
 #login:hover {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
   color: navy;
   transform: scale(2, 2);
   font-size: large;
+}
+#login:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease;
+}
+#login:hover:after {
+  width: 100%;
 }
 #home:hover {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -48,15 +73,55 @@
   color: navy;
   transform: scale(2, 2);
 }
+#home:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease;
+}
+#home:hover::after {
+  width: 100%;
+}
 #about:hover {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   transform: scale(2, 2);
   font-size: x-large;
   color: navy;
 }
+#about:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease;
+}
+#about:hover::after {
+  width: 100%;
+}
 #contact:hover {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: larger;
   color: navy;
   transform: scale(2, 2);
+}
+
+#contact:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease;
+}
+#contact:hover::after {
+  width: 100%;
 }
