@@ -31,7 +31,7 @@
 
   color: navy;
   font-size: larger;
-  transform: scale(2, 2);
+  transform: scale(1, 1);
 }
 #signup:after {
   content: "";
@@ -50,7 +50,7 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: navy;
-  transform: scale(2, 2);
+  transform: scale(1, 1);
   font-size: large;
 }
 #login:after {
@@ -71,7 +71,7 @@
   font-size: larger;
   font-style: inherit;
   color: navy;
-  transform: scale(2, 2);
+  transform: scale(1, 1);
 }
 #home:after {
   content: "";
@@ -88,7 +88,7 @@
 }
 #about:hover {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  transform: scale(2, 2);
+  transform: scale(1, 1);
   font-size: x-large;
   color: navy;
 }
@@ -109,7 +109,7 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: larger;
   color: navy;
-  transform: scale(2, 2);
+  transform: scale(1, 1);
 }
 
 #contact:after {
