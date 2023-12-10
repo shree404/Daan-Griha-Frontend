@@ -1,29 +1,19 @@
 import "./App.css";
 import React from "react";
-import Nav from "./components/nav";
-import LandingPage from "./components/landingPage";
-import Background from "./components/background";
-import Donate from "./components/donate-button";
-import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
 import SignUp from "./components/SignUp";
-
 
 function App() {
   return (
+    <Router>
       <div>
-        <Nav />
-        <Router>
+        <Home />
         <Routes>
-          <Route path="/signup" element={<SignUp/>} />
-          </Routes>
-        </Router>
-        <Donate />
-
-        <div className="landingpage">
-          <LandingPage />
-        </div>
-        <Background />
+          <Route path="/signup" element={<SignUp />} />
+        </Routes>
       </div>
+    </Router>
   );
 }
 export default App;
