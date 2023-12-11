@@ -83,7 +83,7 @@ function SingUp() {
         "Banke",
         "Bardiya",
         "Dang",
-        "Eastern Rukum",
+        "Eastern_Rukum",
         "Gulmi",
         "Kapilvastu",
         "Parasi",
@@ -118,6 +118,88 @@ function SingUp() {
     };
 
     return provinceDistricts[province] || [];
+  };
+  const getMunicipalities = (district) => {
+    const districtMunicipalities = {
+      Jhapa: [],
+      Ilam: [],
+      Panchthar: [],
+      Taplejung: [],
+      Sankhuwasabha: [],
+      Terhathum: [],
+      Bhojpur: [],
+      Dhankuta: [],
+      Khotang: [],
+      Sunsari: [],
+      Morang: [],
+      Solukhumbu: [],
+      Okhaldhunga: [],
+      Udaipur: [],
+      Parsa:[],
+      Bara:[],
+      Rautahat:[],
+      Sarlahi:[],
+      Mahotari:[],
+      Dhanusha:[],
+      Siraha:[],
+      Saptari:[],
+      Kathmandu:[],
+      Lalitpur:[],
+      Bhaktapur:[],
+      Chitwan:[],
+      Rasuwa:[],
+      Ramechhap:[],
+      Kavre:[],
+      Makhwanpur:[],
+      Dhading:[],
+      Nuwakot:[],
+      Sindhupalchoke:[],
+      Dolakha:[],
+      Sindhuli:[],
+      Baglung:[],
+      Gorkha:[],
+      Manang:[],
+      Lamjung:[],
+      Tanahun:[],
+      Nawalparasi:[],
+      Kaski:[],
+      Syangja:[],
+      Parvat:[],
+      Myagdi:[],
+      Mustang:[],
+      Arghakhanchi:[],
+      Banke:[],
+      Bardiya:[],
+      Dang:[],
+      Eastern_Rukum:[],
+      Gulmi:[],
+      Kapilvastu:[],
+      Parasi:[],
+      Palpa:[],
+      Pyuthan:[],
+      Rolpa:[],
+      Rupandehi:[],
+      Dolpa:[],
+      Mugu:[],
+      Humla:[],
+      Jumla:[],
+      Kalikot:[],
+      Dailekh:[],
+      Jajarkot:[],
+      Rukum:[],
+      Salyan:[],
+      Surkhet:[],
+      Kailali:[],
+      Kanchanpur:[],
+      Baitadi:[],
+      Dadeldhura:[],
+      Doti:[],
+      Achham:[],
+      Darchula:[],
+      Bajhang:[],
+      Bajura:[],
+    };
+    return districtMunicipalities[district] || [];
   };
 
   const handleSubmit = (event) => {
@@ -182,6 +264,23 @@ function SingUp() {
               {getDistricts(formData.province).map((district) => (
                 <option key={district} value={district}>
                   {district}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
+         {formData.district && (
+          <label htmlFor="Municipality">
+            Municipality:
+            <select
+              name="municipality"
+              value={formData.municipality}
+              onChange={handleInputChange}
+            >
+              <option value="">Select Municipality:</option>
+              {getMunicipalities(formData.district).map((municipality) => (
+                <option key={municipality} value={municipality}>
+                  {municipality}
                 </option>
               ))}
             </select>
