@@ -267,7 +267,7 @@ function SingUp() {
           <div className="form-row">
             {formData.province && (
               <label htmlFor="district" className="input-label">
-                District:
+                District:{" "}
                 <select
                   name="district"
                   className="input-type"
@@ -287,7 +287,7 @@ function SingUp() {
           <div className="form-row">
             {formData.district && (
               <label htmlFor="Municipality" className="input-label">
-                Municipality:
+                Municipality:{" "}
                 <select
                   name="municipality"
                   className="input-type"
