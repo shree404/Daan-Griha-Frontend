@@ -6,14 +6,17 @@ import SignUp from "./components/SignUp";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Home />
-        <Routes>
-          <Route path="/signup" element={<SignUp />} />
-        </Routes>
-      </div>
-    </Router>
+    // <Router>
+    //   <div>
+    //     <Home />
+    //     <Routes>
+    //       <Route path="/signup" element={<SignUp />} />
+    //     </Routes>
+    //   </div>
+    // </Router>
+    <div>
+      <SignUp/>
+    </div>
   );
 }
 export default App;
