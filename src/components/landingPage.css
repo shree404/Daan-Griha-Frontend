@@ -68,8 +68,8 @@ header {
 }
 
 .features:hover {
-  transform: scale(1.02); /* Scale effect on hover */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  transform: scale(1.02); 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
 }
 
 .features-container {
