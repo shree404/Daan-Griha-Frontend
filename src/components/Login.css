@@ -1,29 +1,54 @@
 .login-container {
-    margin-top: 50px;
-    margin-left: 325px;
-    width: 600px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-  }
-  .login-input {
-    width: 200px;
-    padding: 8px;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+  margin-top: 50px;
+  margin-left: 325px;
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+.login-input {
+  width: 200px;
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
-  .login-button {
-    align-self: center;
-     font-size: 16px;
-     cursor: pointer;
-     border: none;
-     border-radius: 4px;
-     background-color: blue;
-     color: white;
-     transition: background-color 0.3s ease-in-out;
-     width: 80px;
-     height: 30px;
-   }
+.login-button {
+  align-self: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+  width: 80px;
+  height: 30px;
+}
+.forget-password {
+  color: blue;
+  font-size: 13px;
+  margin-left: -190px;
+}
+.donthaveacc {
+  font-size: 13px;
+  margin-left: -190px;
+}
+.signup-button-loginpage {
+  align-self: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+  width: 80px;
+  height: 30px;
+}
+.newacc{
+  display: column;
+ 
+}

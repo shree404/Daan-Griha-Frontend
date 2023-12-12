@@ -50,9 +50,16 @@ function Login() {
                 onChange={handleInputChange}
             />
           </label>
+          <div className="forget-password">
+          <p>Forget password?</p>
+          </div>
         </div>
         <button className="login-button"> Login</button>
       </form>
+      <div className="newacc">
+        <p className="donthaveacc">Don't have Account?</p>
+        <button className="signup-button-loginpage">Sign Up</button>
+      </div>
     </div>
   );
 }
