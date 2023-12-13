@@ -3,7 +3,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import SignUp from "./components/SignUp";
-import Login from "./components/Login"
+import Login from "./components/Login";
+import Forget_Password from "./components/Forget-Password";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
     //   </div>
     // </Router>
     <div>
-     <Login/>
+     <Forget_Password/>
     </div>
   );
 }
