@@ -3,7 +3,7 @@
   }
   
   /* Button styles */
-  button {
+  .donate-button {
     margin-left: 1150px;
     font-size: 16px;
     cursor: pointer;
@@ -14,6 +14,6 @@
     transition: background-color 0.3s ease-in-out;
   }
   
-  button:hover {
+  .donate-button:hover {
     background-color: #2ecc71;
   }

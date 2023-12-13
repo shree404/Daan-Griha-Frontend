@@ -1,21 +1,55 @@
 .container {
   margin-top: 50px;
-  width: 300px;
+  margin-left: 225px;
+  width: 800px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
 }
+.input-type {
+  width: 150px;
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  padding: 18px;
 }
-button {
-  padding: "10px";
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
+
+.name {
+  display: flex;
+  gap: 150px;
+}
+.address {
+  display: flex;
+  gap: 50px;
+}
+.contact-info {
+  display: flex;
+  gap: 180px;
+}
+.password {
+  display: flex;
+  gap: 150px;
+}
+.signup-button {
+ align-self: center;
+  font-size: 16px;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+  width: 80px;
+  height: 30px;
+}
+
+.signup-button:hover {
+  background-color: #2ecc71;
 }

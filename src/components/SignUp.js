@@ -1046,119 +1046,182 @@ function SingUp() {
     <div className="container">
       <h2>Signup Form</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="First Name" className="firstname">
-          {" "}
-          First Name:
-          <input
-            type="text"
-            name="firstname"
-            id="firstname"
-            placeholder="First Name"
-            value={formData.firstname}
-            onChange={handleInputChange}
-          />
-        </label>
-        <label htmlFor="Last Name" className="lastname">
-          {" "}
-          Last Name:
-          <input
-            type="text"
-            name="lastname"
-            id="lastname"
-            placeholder="Last Name"
-            value={formData.lastname}
-            onChange={handleInputChange}
-          />
-        </label>
-        <label htmlFor="Province" className="province">
-          {" "}
-          Province:
-          <select
-            name="province"
-            value={formData.province}
-            onChange={handleInputChange}
-          >
-            <option value="">Select your Province</option>
-            <option value="koshi">Koshi province</option>
-            <option value="madesh">Madesh Province </option>
-            <option value="bagmati">Bagmati Province</option>
-            <option value="gandaki">Gandaki Province</option>
-            <option value="lumbini">Lumbini Province</option>
-            <option value="karnali">Karnali Province</option>
-            <option value="sudurpashchim">Sudurpashchim Province</option>
-          </select>
-        </label>
-        {formData.province && (
-          <label htmlFor="district">
-            District:
-            <select
-              name="district"
-              value={formData.district}
+        <div className="name">
+          <div className="form-row">
+            <label htmlFor="First Name" className="input-label">
+              {" "}
+              First Name:
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                className="input-type"
+                placeholder="First Name"
+                value={formData.firstname}
+                onChange={handleInputChange}
+              />
+            </label>
+          </div>
+          <div className="\form-row">
+            <label htmlFor="Last Name" className="input-label">
+              {" "}
+              Last Name:
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                className="input-type"
+                placeholder="Last Name"
+                value={formData.lastname}
+                onChange={handleInputChange}
+              />
+            </label>
+          </div>
+        </div>
+        <div className="address">
+          <div className="form-row">
+            <label htmlFor="Province" className="input-label">
+              {" "}
+              Province:
+              <select
+                name="province"
+                className="input-type"
+                value={formData.province}
+                onChange={handleInputChange}
+              >
+                <option value="">Select your Province</option>
+                <option value="koshi">Koshi province</option>
+                <option value="madesh">Madesh Province </option>
+                <option value="bagmati">Bagmati Province</option>
+                <option value="gandaki">Gandaki Province</option>
+                <option value="lumbini">Lumbini Province</option>
+                <option value="karnali">Karnali Province</option>
+                <option value="sudurpashchim">Sudurpashchim Province</option>
+              </select>
+            </label>
+          </div>
+          <div className="form-row">
+            {formData.province && (
+              <label htmlFor="district" className="input-label">
+                District:{" "}
+                <select
+                  name="district"
+                  className="input-type"
+                  value={formData.district}
+                  onChange={handleInputChange}
+                >
+                  <option value="">Select District</option>
+                  {getDistricts(formData.province).map((district) => (
+                    <option key={district} value={district}>
+                      {district}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
+          </div>
+          <div className="form-row">
+            {formData.district && (
+              <label htmlFor="Municipality" className="input-label">
+                Municipality:{" "}
+                <select
+                  name="municipality"
+                  className="input-type"
+                  value={formData.municipality}
+                  onChange={handleInputChange}
+                >
+                  <option value="">Select Municipality:</option>
+                  {getMunicipalities(formData.district).map((municipality) => (
+                    <option key={municipality} value={municipality}>
+                      {municipality}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
+          </div>
+        </div>
+        <div className="contact-info">
+          <div className="form-row">
+            <label htmlFor="Contact" className="input-label">
+              {" "}
+              Contact No:
+              <input
+                type="tel"
+                name="contact"
+                id="contactno"
+                className="input-type"
+                placeholder="Contact No"
+                value={formData.contact}
+                onChange={handleInputChange}
+              />
+            </label>
+          </div>
+          <div className="form-row">
+            <label htmlFor="Email" className="input-label">
+              {" "}
+              Email:
+              <input
+                type="email"
+                name="email"
+                className="input-type"
+                id="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleInputChange}
+              />
+            </label>
+          </div>
+        </div>
+        <div className="form-row">
+          <label htmlFor="username" className="input-label">
+            {" "}
+            Username:
+            <input
+              type="text"
+              name="username"
+              id="username"
+              className="input-type"
+              placeholder="Set Username"
+              value={formData.username}
               onChange={handleInputChange}
-            >
-              <option value="">Select district</option>
-              {getDistricts(formData.province).map((district) => (
-                <option key={district} value={district}>
-                  {district}
-                </option>
-              ))}
-            </select>
+            />
           </label>
-        )}
-         {formData.district && (
-          <label htmlFor="Municipality">
-            Municipality:
-            <select
-              name="municipality"
-              value={formData.municipality}
-              onChange={handleInputChange}
-            >
-              <option value="">Select Municipality:</option>
-              {getMunicipalities(formData.district).map((municipality) => (
-                <option key={municipality} value={municipality}>
-                  {municipality}
-                </option>
-              ))}
-            </select>
-          </label>
-        )}
-        <label htmlFor="Contact">
-          {" "}
-          Contact No:
-          <input
-            type="tel"
-            name="contact"
-            id="contactno"
-            placeholder="Contact No"
-            value={formData.contact}
-            onChange={handleInputChange}
-          />
-        </label>
-        <label htmlFor="username">
-          {" "}
-          Username:
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="Set Username"
-            value={formData.username}
-            onChange={handleInputChange}
-          />
-        </label>
-        <label htmlFor="Email">
-          {" "}
-          Email:
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={handleInputChange}
-          />
-        </label>
-        <button type="submit">Sign Up</button>
+        </div>
+        <div className="password">
+          <div className="form-row">
+            <label htmlFor="password" className="input-label">
+              {" "}
+              Password:
+              <input
+                type="password"
+                name="password"
+                id="password"
+                className="input-type"
+                placeholder="Set Password"
+                formMethod="post"
+                value={formData.password}
+                onChange={handleInputChange}
+              />
+            </label>
+          </div>
+          <div className="form-row">
+            <label htmlFor="confirmpassword" className="input-label">
+              {" "}
+              Confirm Password:
+              <input
+                type="password"
+                name="confirmpassword"
+                id="confirmpassword"
+                className="input-type"
+                placeholder="Confirm Password"
+                value={formData.confirmpassword}
+                onChange={handleInputChange}
+              />
+            </label>
+          </div>
+        </div>
+        <button className="signup-button">Sign Up</button>
       </form>
     </div>
   );
