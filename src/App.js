@@ -1,23 +1,29 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./components/Home";
-import SignUp from "./components/SignUp";
+import { BrowserRouter , Routes, Route, Link } from "react-router-dom";
+import Home from "./components/home";
+import SignUp from "./components/signup";
 import Login from "./components/Login";
 import Forget_Password from "./components/Forget-Password";
+import Contact from "./components/contact";
+import Dashboard from "./components/dashboard";
+import Donate from "./components/donate";
 
 function App() {
   return (
-    // <Router>
-    //   <div>
-    //     <Home />
-    //     <Routes>
-    //       <Route path="/signup" element={<SignUp />} />
-    //     </Routes>
-    //   </div>
-    // </Router>
+    
     <div>
-     <Forget_Password/>
+     <BrowserRouter>
+   <Routes>
+    <Route path="/" element={<Home/>} />
+    <Route path="/signup" element={<SignUp/>} />
+    <Route path="/login" element={<Login/>} />
+    <Route path="/reset" element={<Forget_Password/>} />
+    <Route path="/contact" element={<Contact/>} />
+    <Route path ="/dashboard" element={<Dashboard/>}/>
+    <Route path ="/donate" element={<Donate/>}/>
+   </Routes>
+   </BrowserRouter>
     </div>
   );
 }

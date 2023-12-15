@@ -25,27 +25,32 @@
   margin: 40px;
   display: inline-block;
 }
-
-#signup:hover {
+#signup:hover{
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+  transform: scale(1, 1);
+  color:red;
+}
+/* #signup:hover {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
-  color: navy;
-  font-size: larger;
+  font-size: large;
   transform: scale(1, 1);
-}
-#signup:after {
+  color: white;
+} */
+/* #signup:after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0;
-  height: 2px;
-  background-color: blue;
-  transition: width 0.3s ease;
+  background-color: white;
+  color: white;
 }
 #signup:hover:after {
   width: 100%;
-}
+} */
 #login:hover {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -53,7 +58,7 @@
   transform: scale(1, 1);
   font-size: large;
 }
-#login:after {
+/* #login:after {
   content: "";
   position: absolute;
   left: 0;
@@ -65,7 +70,7 @@
 }
 #login:hover:after {
   width: 100%;
-}
+} */
 #home:hover {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: larger;
@@ -73,7 +78,7 @@
   color: navy;
   transform: scale(1, 1);
 }
-#home:after {
+/* #home:after {
   content: "";
   position: absolute;
   left: 0;
@@ -85,14 +90,14 @@
 }
 #home:hover::after {
   width: 100%;
-}
+} */
 #about:hover {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   transform: scale(1, 1);
   font-size: x-large;
   color: navy;
 }
-#about:after {
+/* #about:after {
   content: "";
   position: absolute;
   left: 0;
@@ -104,7 +109,7 @@
 }
 #about:hover::after {
   width: 100%;
-}
+} */
 #contact:hover {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: larger;
@@ -112,7 +117,7 @@
   transform: scale(1, 1);
 }
 
-#contact:after {
+/* #contact:after {
   content: "";
   position: absolute;
   left: 0;
@@ -124,4 +129,4 @@
 }
 #contact:hover::after {
   width: 100%;
-}
+} */
