@@ -37,6 +37,7 @@ form {
   display: flex;
   gap: 150px;
 }
+
 .signup-button {
  align-self: center;
   font-size: 16px;
@@ -52,4 +53,7 @@ form {
 
 .signup-button:hover {
   background-color: #2ecc71;
+}
+.username-signup{
+  margin-left: -520px;
 }

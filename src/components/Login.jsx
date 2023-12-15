@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
+import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -54,7 +55,7 @@ function Login() {
         </div>
         <button className="login-button"> Login</button>
         <div className="forget-password">
-          <p>Forget password?</p>
+          <p> <Link to="/reset">Forget password?</Link></p>
           </div>
       </form>
       <div className="newacc">

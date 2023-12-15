@@ -1173,7 +1173,7 @@ function SingUp() {
             </label>
           </div>
         </div>
-        <div className="form-row">
+        <div className="username-signup">
           <label htmlFor="username" className="input-label">
             {" "}
             Username:
