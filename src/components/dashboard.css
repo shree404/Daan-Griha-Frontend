@@ -1,0 +1,9 @@
+.dashboard-container{
+    margin-top: 50px;
+    margin-left: 225px;
+    width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}

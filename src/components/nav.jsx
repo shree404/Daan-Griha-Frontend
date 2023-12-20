@@ -2,12 +2,11 @@ import React, { useState } from "react";
 
 import "./nav.css";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
-import SignUp from "./SignUp";
+import SignUp from "./signup";
 
 function Nav() {
   return (
     <div>
-      <Router>
         <nav className="nav-bar">
           <p id="signup">
             <Link to="/signup">SignUp</Link>
@@ -25,11 +24,6 @@ function Nav() {
             <Link to="/contact">Contact</Link>
           </p>
         </nav>
-        {/* <Routes>
-          <Route path="/signup" element={<SignUp/>} />
-          </Routes> */}
-
-      </Router>
     </div>
   );
 }

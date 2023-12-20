@@ -1,0 +1,22 @@
+.donate-form-container {
+  margin-top: 50px;
+  margin-left: 225px;
+  width: 800px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+.submit-donate{
+
+align-self: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+  width: 80px;
+  height: 30px;
+}

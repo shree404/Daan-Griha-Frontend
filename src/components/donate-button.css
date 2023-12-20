@@ -12,6 +12,8 @@
     background-color: #27ae60;
     color: white;
     transition: background-color 0.3s ease-in-out;
+    width: 80px;
+    height: 30px;
   }
   
   .donate-button:hover {
