@@ -1,31 +1,103 @@
+/*whole nav area incliuding barnding name*/
+.navigation-area{
+  width: auto;
+  height: 120px;
+  border: none;
+  background-color: white;
+  color: black;
+  
+}
+/*this for the area of branding name(area)*/
+.Branding{
+  display: inline-block;
+  border: none;
+  width: 15%;
+  height: 120px;
+}
+/*css design for branding name (text design)*/
+#logo{
+   font-family: 'Times New Roman', Times, serif;
+   font-size:40px;
+   font-weight: bold;
+   margin: ;
+   padding: ;
+   text-align: center;
+}
+/* this is for the barnd name last color changes (style for griha)*/
+#logo-last{
+  color: MediumSeaGreen;
+}
+
+/* this filed for the actual nav bar like home button and others*/
 .nav-bar {
   display: inline-block;
-  margin-top: 0px;
+  margin: 0px 50px 0px 0px;
+  float: right;
+  padding: ;
+  background-color: ;
+  text-align: center;
+  
+
+  
 }
 .nav-bar:hover {
   display: inline-block;
 }
+/* 
 #signup {
+  font-size: ;
+  font-family:'Times New Roman', Times, serif ;
+  color: ;
   margin: 40px;
   display: inline-block;
-}
+}*/
 #login {
-  margin: 40px;
+
+  margin: 40px 40px 40px 40px;
+  padding: 10px 5px 5px 5px;
+  width:100px ;
+  height:40px;
   display: inline-block;
+  /*
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: black;
+  */
+  
+} 
+
+/*design for nav buttons */
+.nav-buttons{
+  color: black;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif ;
+  text-decoration: none;
+  font-weight: bold;
 }
 #home {
-  margin: 40px;
+  padding: 10px 5px 5px 5px;
+  width:100px ;
+  height:40px;
+  margin: 40px 40px 40px 40px;
   display: inline-block;
+  
+ 
 }
 #about {
-  margin: 40px;
+  margin: 40px 40px 40px 40px;
+  padding: 10px 5px 5px 5px;
+  width:100px ;
+  height:40px;
   display: inline-block;
 }
 #contact {
-  margin: 40px;
+  margin: 40px 40px 40px 40px;
+  padding: 10px 5px 5px 5px;
+  width:100px ;
+  height:40px;
   display: inline-block;
 }
-
+/* 
 #signup:hover {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
@@ -46,13 +118,20 @@
 #signup:hover:after {
   width: 100%;
 }
+*/
+/**/
+
 #login:hover {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: navy;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  font-style: inherit;
+  color: white;
   transform: scale(1, 1);
-  font-size: large;
+  background-color: MediumSeaGreen;
+
 }
+/**/
+
 #login:after {
   content: "";
   position: absolute;
@@ -60,19 +139,32 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: blue;
+  background-color: navy;
   transition: width 0.3s ease;
 }
+/**/
+
 #login:hover:after {
   width: 100%;
+}
+/**/
+.nav-buttons:hover{
+  color: white;
+  
 }
 #home:hover {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: larger;
   font-style: inherit;
-  color: navy;
+  color: white;
   transform: scale(1, 1);
+  background-color: MediumSeaGreen;
+  
+ 
+  
 }
+/**/
+
 #home:after {
   content: "";
   position: absolute;
@@ -80,18 +172,28 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: blue;
+  background-color: navy;
+  border-radius: 15px;
   transition: width 0.3s ease;
 }
+/**/
+
 #home:hover::after {
   width: 100%;
 }
+/**/
+
 #about:hover {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  font-style: inherit;
+  color: white;
   transform: scale(1, 1);
-  font-size: x-large;
-  color: navy;
+  background-color: MediumSeaGreen;
+/**/
 }
+/**/
+
 #about:after {
   content: "";
   position: absolute;
@@ -105,12 +207,17 @@
 #about:hover::after {
   width: 100%;
 }
+/**/
+/**/
 #contact:hover {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: larger;
-  color: navy;
+  font-style: inherit;
+  color: white;
   transform: scale(1, 1);
+  background-color: MediumSeaGreen;
 }
+/**/
 
 #contact:after {
   content: "";
@@ -122,6 +229,8 @@
   background-color: blue;
   transition: width 0.3s ease;
 }
+/**/
+
 #contact:hover::after {
   width: 100%;
 }

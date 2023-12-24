@@ -9,11 +9,14 @@ function Home() {
   return (
     <div>
       <Nav />
-      <Donate />
-
+      
       <div className="landingpage">
         <LandingPage />
       </div>
+
+      <Donate />
+
+      
       <Background />
     </div>
   );

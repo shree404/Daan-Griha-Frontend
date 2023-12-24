@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./SignUp.css";
 
+
 function SingUp() {
   const [formData, setFormData] = useState({
     firstname: "",
