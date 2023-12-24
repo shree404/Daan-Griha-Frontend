@@ -11,7 +11,7 @@ const About = () => {
             <h1 className="about-title">About Us</h1>
             <img
         src={myImage}
-        alt="About Image"
+        alt="About"
         className="about-image"
       />
 
