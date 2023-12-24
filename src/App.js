@@ -8,6 +8,7 @@ import Forget_Password from "./components/Forget-Password";
 import Contact from "./components/contact";
 import Dashboard from "./components/dashboard";
 import Donate from "./components/donate";
+import About from "./components/about";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
     <Route path="/contact" element={<Contact/>} />
     <Route path ="/dashboard" element={<Dashboard/>}/>
     <Route path ="/donate" element={<Donate/>}/>
+    <Route path="/about" element={<About/>} />
    </Routes>
    </BrowserRouter>
     </div>
