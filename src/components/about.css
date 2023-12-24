@@ -2,7 +2,6 @@
 .about-container{
   background: linear-gradient(to bottom, #62cf68da 40%, #ffffff 40%);
   color: white;
-  height: 100vh;
   overflow: hidden;
 }
 
