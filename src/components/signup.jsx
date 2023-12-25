@@ -1043,8 +1043,13 @@ function SingUp() {
     console.log("Form submitted:", formData);
   };
   return (
+<div className="signup-background">
+
     <div className="container">
-      <h2>Signup Form</h2>
+      <h2 className="header">Sign up</h2>
+
+      <hr className="form-divider" />
+
       <form onSubmit={handleSubmit}>
         <div className="name">
           <div className="form-row">
@@ -1062,6 +1067,7 @@ function SingUp() {
               />
             </label>
           </div>
+          <div className="last-name">
           <div className="\form-row">
             <label htmlFor="Last Name" className="input-label">
               {" "}
@@ -1076,6 +1082,7 @@ function SingUp() {
                 onChange={handleInputChange}
               />
             </label>
+            </div>
           </div>
         </div>
         <div className="address">
@@ -1205,6 +1212,7 @@ function SingUp() {
               />
             </label>
           </div>
+          <div className="confirm-password">
           <div className="form-row">
             <label htmlFor="confirmpassword" className="input-label">
               {" "}
@@ -1220,10 +1228,13 @@ function SingUp() {
               />
             </label>
           </div>
+          </div>
         </div>
         <button className="signup-button">Sign Up</button>
       </form>
     </div>
+</div>
+    
   );
 }
 
