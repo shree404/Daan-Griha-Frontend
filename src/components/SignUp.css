@@ -6,12 +6,19 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
+  background-color: rgba(212, 219, 220, 0.6) ;
+  margin: 0 auto;
+}
+
+.header{
+  font-size: 34px;
+  text-align: center;
 }
 .input-type {
   width: 150px;
   padding: 8px;
   font-size: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 4px;
 }
 form {
@@ -23,37 +30,64 @@ form {
 
 .name {
   display: flex;
-  gap: 150px;
+  gap: 50px;
+  margin: 12px;
 }
+
+.last-name{
+margin-left: 90px;
+}
+
 .address {
   display: flex;
   gap: 50px;
+  margin: 23px;
 }
 .contact-info {
   display: flex;
   gap: 180px;
+  margin: 6px;
 }
 .password {
   display: flex;
   gap: 150px;
+  margin:19px;
+}
+
+.confirm-password{
+  margin-left: -60px;
 }
 
 .signup-button {
  align-self: center;
   font-size: 16px;
   cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  background-color: blue;
-  color: white;
+  border: black;
+  border-radius: 8px;
+  background-color: #199406;
+  color: #ffffff;
   transition: background-color 0.3s ease-in-out;
   width: 80px;
   height: 30px;
+  box-shadow: 0 0 5px rgba(63, 66, 63);
 }
 
 .signup-button:hover {
-  background-color: #2ecc71;
+  background-color: #2ecc;
 }
 .username-signup{
-  margin-left: -520px;
+  margin-left: -490px;
 }
+
+.signup-background {
+  background-image: url('../img/food-waste-problem.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+   
