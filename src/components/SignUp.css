@@ -11,8 +11,10 @@
 }
 
 .header{
+  margin-top: auto;
   font-size: 34px;
   text-align: center;
+  color: #181717;
 }
 .input-type {
   width: 150px;
@@ -90,4 +92,9 @@ margin-left: 90px;
 }
 
 
-   
+.form-divider {
+  width: 100%;
+  border: 1px solid #181717; /* Adjust color as needed */
+  margin: 20px 0; /* Adjust spacing as needed */
+}
+

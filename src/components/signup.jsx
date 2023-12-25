@@ -1046,7 +1046,10 @@ function SingUp() {
 <div className="signup-background">
 
     <div className="container">
-      <h2 className="header">Signup Form</h2>
+      <h2 className="header">Sign up</h2>
+
+      <hr className="form-divider" />
+
       <form onSubmit={handleSubmit}>
         <div className="name">
           <div className="form-row">
