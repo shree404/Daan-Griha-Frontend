@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
       <Nav />
-      <Donate />
+     {/**  <Donate /> */}
 
       <div className="landingpage">
         <LandingPage />

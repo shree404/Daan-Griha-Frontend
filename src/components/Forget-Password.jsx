@@ -21,7 +21,9 @@ function Forget_Password() {
   };
   return (
     <div className="Forget-Password-Container">
-      <h2>Reset Password</h2>
+      <div className="" id="forget_title">
+        <p id="forget_title_name">Reset Password</p>
+      </div>
       <form
         action="submit"
         className="Form-Forget-Password"
