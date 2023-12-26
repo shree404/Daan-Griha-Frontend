@@ -1,12 +1,18 @@
 import React from 'react';
 import "./about.css";
 import myImage from '../img/about.jpg';
+import Nav from "./nav";
 
 const About = () => {
     const emailAddress = 'Daangriha@gmail.com';
     return (
-      
+    <div className="" id="contact_page">
+        <div className='' id='nav_area'>
+            <Nav />
+        </div>
+        
         <div className="about-container">
+          
 
             <h1 className="about-title">About Us</h1>
             <img
@@ -25,7 +31,7 @@ const About = () => {
              </p>
       
         </div>
-       
+     </div>  
     );
 };
 

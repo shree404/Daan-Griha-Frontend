@@ -1,4 +1,6 @@
+/* LandingPage.css */
 
+/* Resetting default margin and padding */
 body {
   padding: 0;
   background-size: cover;
@@ -7,16 +9,76 @@ body {
   color: black;
 }
 
-
+/* Global styles */
 .landing-page {
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0 auto;
-  padding: 20px;
-  max-width: 800px;
+  padding: ;
+  width: 100%;
+ /* max-width: 800px;*/
   position: absolute;
 }
+/* style for home coverphotos area */
+.home_cover_area{
+  
+ 
+  width: 1920px;
+  height: 400px;
 
+
+}
+
+/*style for the coverimage  */
+.home_cover{
+  width: 1920px;
+  height: 400px;
+}
+.title_for_cover{
+  background-color: MediumSeaGreen;
+  width: 1920px;
+  height: 100px;
+  display: block;
+ 
+
+}
+.header1{
+  display: block;
+  
+}
+p{
+  font-size: xx-large;
+  
+}
+/*  */
+.photogrid{
+  width: 100%;
+  margin-top: 100px;
+  display: block;
+
+}
+.grid1{
+  display: inline-block;
+  width: 30%;
+  height:;
+  box-sizing: border-box;
+  margin: auto;
+  padding:auto;
+  
+}
+.donate_img1{
+  display: inline-block;
+  width: 300px;
+  height:200px ;
+  border-radius: 5px;
+
+  
+  
+}
+
+
+
+/*  */
 header {
   margin-bottom: 30px;
   margin-top: 20px;
@@ -24,7 +86,7 @@ header {
   text-align: center;
 }
 
-.header-landing-page h1 {
+.header h1 {
   overflow: hidden;
   border-right: 0.08em solid orange;
   white-space: nowrap;
@@ -40,7 +102,17 @@ header {
     width: 100%;
   }
 }
-
+/* }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  } */
+/* } */
 #head:hover {
   color: #27ae60;
 }
@@ -52,7 +124,7 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   stroke: black;
   margin-left: 50px;
-  position: absolute;
+  /* Add any other styles as needed */
 }
 
 .features:hover {
@@ -66,13 +138,10 @@ header {
   justify-content: flex-end;
   margin:2px;
   text-align: center;
-  position: relative;
-  height: 200px;
-  width: auto;
-  border: none;
-  outline: none;
+  position: absolute;
 }
 
+/* Footer styles */
 footer {
   margin-top: 50px;
   font-size: 12px;
