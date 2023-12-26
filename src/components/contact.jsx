@@ -1,9 +1,19 @@
 import React from 'react';
 import "./contact.css"
 
+import Nav from "./nav"
+
 const Contact = () => {
     return (
+        
+    <div className="" id="contact_page">
+        <div className='' id='nav_area'>
+        <Nav />
+
+        </div>
+
         <div className="contact-container">
+            
             <h1>Contact Us</h1>
             <p>For any inquiries or support, please feel free to reach out to us.</p>
             <form>
@@ -19,6 +29,8 @@ const Contact = () => {
                 <button type="submit" id="contactbutton" >Submit</button>
             </form>
         </div>
+
+    </div>
     );
 };
 

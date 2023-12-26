@@ -12,7 +12,7 @@ import About from "./components/about";
 
 function App() {
   return (
-    
+   
     <div>
      <BrowserRouter>
    <Routes>
