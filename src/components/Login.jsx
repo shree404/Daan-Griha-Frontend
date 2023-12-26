@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 import Nav from "./nav";
+
 function Login() {
   const [formData, setFormData] = useState({
     loginid: "",
@@ -19,7 +20,8 @@ function Login() {
     console.log("Form submitted:", formData);
   };
   return (
-     /*this div area includes whole login page with nav bar */ 
+    
+/*this div area includes whole login page with nav bar */ 
     <div className="" id="login_page">
       {/* calling navigation bar  */}
         <div className='' id='nav_area'>
@@ -77,8 +79,11 @@ function Login() {
       </form>
       <div className="newacc">
         <p className="donthaveacc">Don't have Account?</p>
-      
+
+        <Link to="/signup">
         <button className="signup-button-loginpage">Sign Up</button>
+        </Link>
+
       </div>
     </div>
     {/* div end for bagground class*/}
