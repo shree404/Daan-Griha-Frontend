@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Forget-Password.css";
+import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
+
 function Forget_Password() {
   const [formData, setFormData] = useState({
     phoneno: "",
