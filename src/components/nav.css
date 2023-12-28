@@ -19,8 +19,7 @@
    font-family: 'Times New Roman', Times, serif;
    font-size:40px;
    font-weight: bold;
-   margin: ;
-   padding: ;
+   
    text-align: center;
 }
 /* this is for the barnd name last color changes (style for griha)*/
@@ -32,13 +31,8 @@
 .nav-bar {
   display: inline-block;
   margin: 0px 50px 0px 0px;
-  float: right;
-  padding: ;
-  background-color: ;
-  text-align: center;
-  
-
-  
+  float: inline-end;
+  text-align: center;  
 }
 .nav-bar:hover {
   display: inline-block;
