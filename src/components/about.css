@@ -1,12 +1,12 @@
 /* About.css */
 .about-container{
-  background: linear-gradient(to bottom, #62cf68da 40%, #ffffff 40%);
+  background: linear-gradient(to bottom, #62cf68da 50%, #ffffff 50%);
   color: white;
 }
 
   
   .about-title {
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 40px;
     margin-bottom: 10px;
     text-align: center;
@@ -19,7 +19,6 @@
   margin-top:15px ;
   padding: 30px;
   text-align: center;
-  background-color: rgb(230, 226, 226);
   border-radius: 8px;
   font-size: 15px;
   text-align: justify;

@@ -20,13 +20,12 @@ function Login() {
     console.log("Form submitted:", formData);
   };
   return (
-    
-/*this div area includes whole login page with nav bar */ 
-    <div className="" id="login_page">
+    <div>
+<div className='' id='nav_area'>
+<Nav />
+</div>
+   <div className="" id="login_page">
       {/* calling navigation bar  */}
-        <div className='' id='nav_area'>
-            <Nav />
-        </div>
 
 <div className="bg" id="">
 
@@ -92,7 +91,7 @@ function Login() {
 
 {/* div end for class login_page*/}
     </div>
-  
+    </div>
 
   );
 }

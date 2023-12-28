@@ -1,13 +1,14 @@
 .container {
-  margin-top: 50px;
-  margin-left: 225px;
   width: 800px;
-  padding: 20px;
+  height: 550px;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
-  background-color: rgba(212, 219, 220, 0.6) ;
-  margin: 0 auto;
+  background-color: rgba(223, 217, 224, 0.8) ;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: #000000;
 }
 
 .header{
@@ -16,6 +17,7 @@
   text-align: center;
   color: #181717;
 }
+
 .input-type {
   width: 150px;
   padding: 8px;
@@ -26,7 +28,7 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding: 18px;
 }
 
@@ -42,7 +44,7 @@ margin-left: 90px;
 
 .address {
   display: flex;
-  gap: 50px;
+  gap: 10px;
   margin: 23px;
 }
 .contact-info {
@@ -75,26 +77,52 @@ margin-left: 90px;
 }
 
 .signup-button:hover {
-  background-color: #2ecc;
+  background-color: blue;
 }
 .username-signup{
   margin-left: -490px;
 }
 
-.signup-background {
-  background-image: url('../img/food-waste-problem.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.have-acc{
+  font-size: 15px;
+  text-align: left;
+  color: black;
+  margin: 15px;
+
 }
 
+.login-button-signuppage {
+  align-self: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color:  rgb(0, 98, 128);;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+  width: 80px;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin: 10px;
+}
 
-.form-divider {
-  width: 100%;
-  border: 1px solid #181717; /* Adjust color as needed */
-  margin: 20px 0; /* Adjust spacing as needed */
+#signup-title{
+  background-color: green;
+  width: 800px;
+  height: 50px;
+  border:none;
+  display: block;
+  border:  black;
+  
+}
+
+.signup-background{
+  background-image: url(../img/food-waste-problem.jpg);
+  display: block;
+  margin-top: 0px;
+  width: auto;
+  height: fit-content;
+  padding:20px; 
 }
 
