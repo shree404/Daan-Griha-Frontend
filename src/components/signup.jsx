@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./SignUp.css";
+import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
+import Nav from "./nav";
 
 function SingUp() {
   const [formData, setFormData] = useState({
@@ -1043,13 +1045,15 @@ function SingUp() {
     console.log("Form submitted:", formData);
   };
   return (
-<div className="signup-background">
-
+    <div className="">
+    <div className="navbar-signup">
+    <Nav />
+    </div>
+    <div className="signup-background">
     <div className="container">
+    <div className="" id="signup-title">
       <h2 className="header">Sign up</h2>
-
-      <hr className="form-divider" />
-
+    </div>
       <form onSubmit={handleSubmit}>
         <div className="name">
           <div className="form-row">
@@ -1230,9 +1234,23 @@ function SingUp() {
           </div>
           </div>
         </div>
-        <button className="signup-button">Sign Up</button>
+       
       </form>
+      <div>
+      <button className="signup-button">Sign Up</button>
+      </div>
+      <div className="haveacc">
+        <p className="have-acc">
+        Already have Account?
+             <Link to="/login">
+        <button className="login-button-signuppage">Log in</button>
+        </Link>
+        </p>
+
+      </div>
     </div>
+    
+</div>
 </div>
     
   );

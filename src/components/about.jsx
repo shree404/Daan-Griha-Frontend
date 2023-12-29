@@ -6,14 +6,8 @@ import Nav from "./nav";
 const About = () => {
     const emailAddress = 'Daangriha@gmail.com';
     return (
-    <div className="" id="contact_page">
-        <div className='' id='nav_area'>
-            <Nav />
-        </div>
-        
         <div className="about-container">
-          
-
+            <Nav />
             <h1 className="about-title">About Us</h1>
             <img
         src={myImage}
@@ -30,9 +24,7 @@ const About = () => {
                If you have any questions or would like to learn more about how you can contribute feel free to contact at : <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
              </p>
       
-        </div>
-     </div>  
-    );
+        </div>)  
 };
 
 export default About;
