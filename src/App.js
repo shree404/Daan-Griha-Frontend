@@ -9,12 +9,15 @@ import Contact from "./components/contact";
 import Dashboard from "./components/dashboard";
 import Donate from "./components/donate";
 import About from "./components/about";
+import Dashboard_Background from "./components/dashboard-background";
 
 function App() {
   return (
    
     <div>
-     <BrowserRouter>
+      <Donate/>
+     {/** <Dashboard_Background/>
+      <BrowserRouter>
    <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/signup" element={<SignUp/>} />
@@ -25,7 +28,7 @@ function App() {
     <Route path ="/donate" element={<Donate/>}/>
     <Route path="/about" element={<About/>} />
    </Routes>
-   </BrowserRouter>
+   </BrowserRouter>*/}
     </div>
   );
 }
