@@ -4,11 +4,10 @@
 
 .navigation-area{
   width: auto;
-  height: 115px;
+  height: 85px;
   border: none;
   background-color: white;
   color: black;
-  
 }
 /*this for the area of branding name(area)*/
 .Branding{
@@ -16,7 +15,8 @@
   border: none;
   width: 15%;
   height: 120px;
-  margin: auto;
+  margin: 40px;
+  margin-top: 20px;
 }
 /*css design for branding name (text design)*/
 #logo{
@@ -32,10 +32,10 @@
 
 /* this filed for the actual nav bar like home button and others*/
 .nav-bar {
-  display: inline-block;
-  margin: 0px 50px 0px 0px;
   float: right;
   text-align: center;
+  margin-top: -20px;
+ 
 }
 .nav-bar:hover {
   display: inline-block;
@@ -53,8 +53,9 @@
   margin: 40px 40px 40px 40px;
   padding: 10px 5px 5px 5px;
   width:100px ;
-  height:40px;
+  height:30px;
   display: inline-block;
+  margin-top: auto;
   /*
   border: 2px solid black;
   border-radius: 15px;
@@ -70,28 +71,28 @@
   font-family:'Times New Roman', Times, serif ;
   text-decoration: none;
   font-weight: bold;
+  margin-top: auto;
 }
 #home {
   padding: 10px 5px 5px 5px;
   width:100px ;
-  height:40px;
+  height:30px;
   margin: 40px 40px 40px 40px;
   display: inline-block;
-  
- 
 }
 #about {
   margin: 40px 40px 40px 40px;
   padding: 10px 5px 5px 5px;
   width:100px ;
-  height:40px;
+  height:30px;
   display: inline-block;
+  
 }
 #contact {
   margin: 40px 40px 40px 40px;
   padding: 10px 5px 5px 5px;
   width:100px ;
-  height:40px;
+  height:30px;
   display: inline-block;
 }
 /* 
@@ -128,6 +129,7 @@
 
 }
 /**/
+
 
 #login:after {
   content: "";
@@ -230,4 +232,12 @@
 
 #contact:hover::after {
   width: 100%;
+}
+
+
+
+.nav-link.active {
+  background-color: #ffcc00; /* Adjust the background color for the active page */
+  color: #fff; /* Adjust the text color for the active page */
+  box-shadow: 0 0 10px #ffcc00; /* Glow effect for the active page */
 }

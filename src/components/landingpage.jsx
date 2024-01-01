@@ -51,14 +51,14 @@ const LandingPage = () => {
 
              </div>
 
-             <div className="grid1" id="donate_clothes_area">
+             <div className="grid2" id="donate_clothes_area">
 
                <img src={donate_clothes} alt="" className="donate_img1" />
                <p>Donate Clothes</p>
 
              </div>
 
-             <div className="grid1" id="donate_money_area">
+             <div className="grid3" id="donate_money_area">
 
                <img src={donate_money} alt="" className="donate_img1" />
                <p>Donate Money</p>

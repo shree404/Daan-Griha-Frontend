@@ -2,11 +2,9 @@ import React, { useState } from "react";
 
 import "./nav.css";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
-import SignUp from "./signup";
 
 function Nav() {
   return (
-    <div className="nav-area" id="">
     <div className="navigation-area">
     
         <div className="Branding" id="logo-area">
@@ -15,25 +13,34 @@ function Nav() {
        
         <nav className="nav-bar">
        
-          <p id="home">
-            <Link className="nav-buttons" to="/">Home</Link>
-          </p>
+        <Link to="/" >
+          <div id="home">
+            <p className="nav-buttons" to="/">Home</p>
+          </div>
+         </Link>
 
           {/* <p id="signup">
             <Link to="/signup">SignUp</Link>
           </p>
   */}
-          
-          <p id="about">
-           
-            <Link className="nav-buttons" to="/about" >About</Link>
-          </p> 
-          <p id="contact">
-            <Link className="nav-buttons" to="/contact">Contact</Link>
-          </p>
-          <p id="login">
-            <Link className="nav-buttons" to="/login">Login</Link>
-          </p>
+        <Link to="/about" >
+          <div id="about">
+            <p className="nav-buttons" to="/about" >About</p>
+          </div> 
+          </Link>
+
+          <Link to="/contact" >
+          <div id="contact">
+            <p className="nav-buttons" to="/contact">Contact</p>
+          </div>
+          </Link>
+
+          <Link to="/login">
+          <div id="login">
+            <p className="nav-buttons" to="/login">Login</p>
+          </div>
+          </Link>
+
 
         </nav>
         
@@ -44,11 +51,6 @@ function Nav() {
 
      
     </div>
-
-
-    
-    </div>
-
 
 
   );
