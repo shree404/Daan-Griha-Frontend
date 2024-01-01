@@ -1,7 +1,10 @@
 /*whole nav area incliuding barnding name*/
+
+
+
 .navigation-area{
   width: auto;
-  height: 120px;
+  height: 115px;
   border: none;
   background-color: white;
   color: black;
@@ -13,17 +16,16 @@
   border: none;
   width: 15%;
   height: 120px;
+  margin: auto;
 }
 /*css design for branding name (text design)*/
 #logo{
    font-family: 'Times New Roman', Times, serif;
-   font-size:40px;
+   font-size:35px;
    font-weight: bold;
-   margin: ;
-   padding: ;
    text-align: center;
 }
-/* this is for the barnd name last color changes (style for griha)*/
+/* this is for the brand name last color changes (style for griha)*/
 #logo-last{
   color: MediumSeaGreen;
 }
@@ -33,12 +35,7 @@
   display: inline-block;
   margin: 0px 50px 0px 0px;
   float: right;
-  padding: ;
-  background-color: ;
   text-align: center;
-  
-
-  
 }
 .nav-bar:hover {
   display: inline-block;

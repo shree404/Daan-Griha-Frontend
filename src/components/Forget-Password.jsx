@@ -22,9 +22,15 @@ function Forget_Password() {
     console.log("Form submitted:", formData);
   };
   return (
+    <div>
+ <Link to="/login">
+    <button className="back-button">Back</button>
+    </Link>
+
     <div className="Forget-Password-Container">
       <div className="" id="forget_title">
-        <p id="forget_title_name">Reset Password</p>
+        <p id="forget_title_name">
+        Reset Password</p>
       </div>
       <form
         action="submit"
@@ -94,7 +100,8 @@ function Forget_Password() {
           </label>
         </div>
       </form>
-      <button className="reset-button"> Reset Password</button>
+      <button className="reset-buton"> Reset Password</button>
+    </div>
     </div>
   );
 }

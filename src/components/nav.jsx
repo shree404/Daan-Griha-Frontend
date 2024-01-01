@@ -6,7 +6,7 @@ import SignUp from "./signup";
 
 function Nav() {
   return (
-    <div className="" id="">
+    <div className="nav-area" id="">
     <div className="navigation-area">
     
         <div className="Branding" id="logo-area">

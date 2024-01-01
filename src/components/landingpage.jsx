@@ -5,15 +5,13 @@ import donate_foods from "../img/donate_foods.jpg";
 import donate_clothes from "../img/donate_clothes.jpg";
 import donate_money from "../img/donate_money.jpg";
 import delivery from "../img/delivery.gif";
-
-
+import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
 
      
     <div className="landing-page">
-
 
       <div className="home_cover_area">
          <img src={cover_for_home} alt="" className="home_cover" />
@@ -31,8 +29,9 @@ const LandingPage = () => {
 
 {/* area of green background just below the cover pages*/ }
        <div className="title_for_cover" id="">
-              
-
+       <Link to="/login">
+              <button className="Donate-button-home">Donate</button>
+       </Link>
            </div>
  {/* area for our works sections*/ } 
        <div className="header1">
