@@ -9,14 +9,16 @@ import Contact from "./components/contact";
 import Dashboard from "./components/dashboard";
 import Donate from "./components/donate";
 import About from "./components/about";
+import Dash from "./components/dash";
 import Dashboard_Background from "./components/dashboard-background";
 
 function App() {
   return (
    
     <div>
-      <Donate/>
-     {/** <Dashboard_Background/>
+      <Dash/>
+      {/**<Donate/>
+     <Dashboard_Background/>*/}{/** 
       <BrowserRouter>
    <Routes>
     <Route path="/" element={<Home/>} />

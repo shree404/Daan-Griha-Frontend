@@ -1,0 +1,206 @@
+.dash-back{
+    background-image: url(../img/dash-back.png);
+    height: fit-content;
+    max-width: 100%;
+    opacity: 100%;
+}
+/*whole nav area incliuding barnding name*/
+.dash-navigation-area{
+    width: auto;
+    height: 120px;
+    border: none; 
+    display: block;
+    
+  }
+  /*this for the area of branding name(area)*/
+  .Branding{
+    display: inline-block;
+    border: none;
+    width: 30%;
+    height: 120px;
+  }
+  /*css design for branding name (text design)*/
+  #logo{
+     font-family: 'Times New Roman', Times, serif;
+     font-size:60px;
+     font-weight: bold;
+    color: white;
+     text-align: center;
+  }
+  /* this is for the barnd name last color changes (style for griha)*/
+  #logo-last{
+    color: MediumSeaGreen;
+  }
+  /* this area is for the profile area */
+  .profile_area{
+    display: inline-block;
+    float: right;
+   width: 20%;
+    /* background-color: brown;  */
+    
+    
+  }
+  /* style for image areas pp image */
+  .user_img_area{
+    position: relative;
+    left: -10px;
+    margin : 0% 25% 0% 25%;
+    padding: 5px;
+    top: 10px; 
+    /* background-color: aqua; */
+    display: block;
+
+  }
+  /* pp image logo on top right side */
+  .dash_user_img{
+    margin : 0% 25% 0% 25%;
+    width: 100px;
+    height: 100px; 
+     
+}
+/* this filed define the username that can be retrive from data base */
+.dash_user_name_area{
+  /* background-color: aqua; */
+  position: relative;
+  top: -10px;
+  margin : 0%;
+}
+/* style for username */
+.dash_user_name{
+    color: aliceblue;
+    font-size:20px ;
+    font-weight:bold ;
+    padding: 10px;
+    text-align: center;
+
+}
+/* this is for login in title after login"welcome to daan-griha"" */
+.logined-title{
+   display: block;
+  background-color: aquamarine;
+  margin-top: 50px;
+  text-align: center;
+   border-radius: 5px;
+  background-color: green;
+
+
+}
+/* this is for welcome to daan-griha title */
+#logined-title-name{
+  text-align: center;
+   color: white;
+   margin: auto;
+   font-weight: bold;
+   font-size: larger;
+   padding: 10px;
+   text-shadow: 2px 2px 4px #000000;
+
+}
+
+.dash-nav-block-area{
+  display: block;
+  margin: auto;
+    overflow: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+  
+  /* height: 500px;
+  width: 1920px; */
+  /* background-color: white; */
+  
+  
+
+}
+
+.dash-nav-area{
+  margin-top: 50px;
+  /* margin-left: 25%;
+  margin-right: 25%; */
+  
+  /* background-color: aqua; */
+  display: block;
+}
+
+.dash-nav-area ul{
+ 
+
+}
+.dash-nav-area li{
+  list-style: none;
+  float: left;
+}
+
+.dash-nav-block{
+ 
+  height: 200px;
+  width: 200px;
+  display: block;
+  
+   background-color: white; 
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px; 
+  border: 2px solid black;
+  filter: drop-shadow(4px 1px 8px #000000);
+  animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.dash-nav-block:hover{
+  filter: drop-shadow(4px 1px 8px #5f87d7);
+
+
+}
+
+.dash-nav-logo{
+  background-color: MediumSeaGreen;
+  
+ 
+  
+
+}
+.dash-nav-imgs{
+  width: 90px;
+  height: 90px;
+  display: block;
+  padding: 30px;
+  /* margin-top: ;
+  margin-bottom: ;
+  margin-left: auto;
+  margin-right: auto; */
+  margin: auto;
+  
+}
+.dash-nav-logo-title-area{
+  /* background-color: aquamarine; */
+  position: relative;
+  top: -10%;
+  
+
+ 
+
+}
+.dash-nav-logo-title{
+ 
+  text-align: center;
+  color: black;
+  /* top: -20px; */
+  
+   font-size: 25px;
+    
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: bold;
+
+}
+ 
