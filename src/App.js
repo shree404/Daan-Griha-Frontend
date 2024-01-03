@@ -13,14 +13,12 @@ import DonateFood from "./components/donatefood";
 import DonateCloth from "./components/donatecloth";
 import DonateMoney from "./components/donatemoney";
 
+
 function App() {
   return (
    
     <div>
-      <Dash/>
-      {/**<Donate/>
-     <Dashboard_Background/>*/}{/** 
-      <BrowserRouter>
+     <BrowserRouter>
    <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/signup" element={<SignUp/>} />
@@ -34,7 +32,7 @@ function App() {
     <Route path="/donatecloth" element={<DonateCloth/>} />
     <Route path="/donatemoney" element={<DonateMoney/>} />
    </Routes>
-   </BrowserRouter>*/}
+   </BrowserRouter>
     </div>
   );
 }
