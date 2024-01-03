@@ -12,17 +12,13 @@ import About from "./components/about";
 import DonateFood from "./components/donatefood";
 import DonateCloth from "./components/donatecloth";
 import DonateMoney from "./components/donatemoney";
-import Dash from "./components/dash";
-import Dashboard_Background from "./components/dashboard-background";
+
 
 function App() {
   return (
    
     <div>
-      <Dash/>
-      {/**<Donate/>
-     <Dashboard_Background/>*/}{/** 
-      <BrowserRouter>
+     <BrowserRouter>
    <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/signup" element={<SignUp/>} />
@@ -36,7 +32,7 @@ function App() {
     <Route path="/donatecloth" element={<DonateCloth/>} />
     <Route path="/donatemoney" element={<DonateMoney/>} />
    </Routes>
-   </BrowserRouter>*/}
+   </BrowserRouter>
     </div>
   );
 }
