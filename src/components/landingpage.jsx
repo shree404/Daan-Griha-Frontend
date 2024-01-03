@@ -41,30 +41,35 @@ const LandingPage = () => {
 
 
 
-
+        
        <div className="photogrid" id="">
 
+            <Link to="/DonateFood">
              <div className="grid1" id="donate_foods_area">
 
                <img src={donate_foods} alt="" className="donate_img1" />
                <p>Donate Food</p>
 
              </div>
+             </Link>
 
+             <Link to="/DonateCloth">
              <div className="grid2" id="donate_clothes_area">
 
                <img src={donate_clothes} alt="" className="donate_img1" />
                <p>Donate Clothes</p>
 
              </div>
+            </Link>
 
+            <Link to="/DonateMoney">
              <div className="grid3" id="donate_money_area">
 
                <img src={donate_money} alt="" className="donate_img1" />
                <p>Donate Money</p>
 
              </div>
-
+           </Link>
 
          </div>
 

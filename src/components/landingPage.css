@@ -82,10 +82,12 @@ p{
   margin: auto;
   padding:auto;
   cursor: pointer;
+ color: #333;
 }
 
-.grid1:hover{
-  
+
+.grid1 img:hover{
+  border: 1px solid green;
 }
 
 .grid2{
@@ -95,11 +97,11 @@ p{
   margin: auto;
   padding:auto;
   cursor: pointer;
+  color: black;
 }
 
-.grid2:hover{
- 
-  
+.grid2 img:hover{
+  border: 1px solid green;
 }
 
 
@@ -110,10 +112,10 @@ p{
   margin: auto;
   padding:auto;
   cursor: pointer;
+  color: black;
 }
-.grid3:hover{
-
-
+.grid3 img:hover{
+  border: 1px solid green;
 }
 
 

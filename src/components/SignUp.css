@@ -4,7 +4,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
-  background-color: rgba(223, 217, 224, 0.8) ;
+  background-color: rgba(223, 217, 224, 0.9) ;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -114,16 +114,15 @@ margin-left: 90px;
   border:none;
   display: block;
   border:  black;
-  
 }
 
 .signup-background{
   background-image: url(../img/food-waste-problem.jpg);
-  opacity: 80%;
+  opacity: 90%;
   display: block;
   margin-top: 0px;
   width: auto;
   height: fit-content;
-  padding:20px; 
+  padding:27px; 
 }
 

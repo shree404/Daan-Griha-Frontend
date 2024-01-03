@@ -1,14 +1,46 @@
 
+#contact_page{
+  background-image: url(../img/contact.jpg);
+  opacity: 90%;
+  display: block;
+  margin-top: 0px;
+  width: auto;
+  height: fit-content;
+  padding:59px; 
+  
+}
+
+
+
+.contact-head{
+   background-color: green;
+  width: 600px;
+  height: 50px;
+  border:none;
+  display: block;
+  border:  black;
+  margin-top: -22px;
+  text-align: center;
+}
 
 
 .contact-container {
-    margin-top: 50px;
-    margin-left: 325px;
     width: 600px;
-    padding: 20px;
+    height: auto;
+    padding: 0px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    text-align: center;
+   text-align: center;
+   margin: auto;
+   margin-top: 50px;
+   background-color: whitesmoke;
+}
+
+
+
+#contact-para{
+  text-align: center;
+  padding: 20px;
 }
 
 

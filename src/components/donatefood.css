@@ -1,0 +1,55 @@
+/* DonateFood.css */
+
+#food{
+  width: 100%;
+  margin-top: auto;
+  display: block;
+}
+
+#second{
+  text-align: justify;
+  line-height: 1.5;
+  margin:20px;
+  margin-right: 35px;
+}
+
+.second-para{
+  margin-top: 10px;
+}
+
+.donate-food-container {
+  display: inline-block ;
+  color: #000000; 
+  width: 60%;
+  margin: 20px;
+  text-align: justify;
+  
+}
+
+
+.donate-food-container p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.donate-header{
+  display: block;
+  text-align: center;
+  width: 60%;
+  font-size: x-large;
+  margin-top: auto;
+}
+
+.food-donation-image{
+  display: inline-block;
+  padding: 0px;
+  margin: 10px;
+  width: 450px;
+  height: 300px;
+}
+
+.food-donation-img{
+  display: inline-block;
+  width: auto;
+}
+

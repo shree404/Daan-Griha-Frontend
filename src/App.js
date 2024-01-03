@@ -9,6 +9,9 @@ import Contact from "./components/contact";
 import Dashboard from "./components/dashboard";
 import Donate from "./components/donate";
 import About from "./components/about";
+import DonateFood from "./components/donatefood";
+import DonateCloth from "./components/donatecloth";
+import DonateMoney from "./components/donatemoney";
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
     <Route path ="/dashboard" element={<Dashboard/>}/>
     <Route path ="/donate" element={<Donate/>}/>
     <Route path="/about" element={<About/>} />
+    <Route path="/donatefood" element={<DonateFood/>} />
+    <Route path="/donatecloth" element={<DonateCloth/>} />
+    <Route path="/donatemoney" element={<DonateMoney/>} />
    </Routes>
    </BrowserRouter>
     </div>
