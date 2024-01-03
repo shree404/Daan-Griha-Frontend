@@ -17,7 +17,10 @@ function App() {
   return (
    
     <div>
-     <BrowserRouter>
+      <Dash/>
+      {/**<Donate/>
+     <Dashboard_Background/>*/}{/** 
+      <BrowserRouter>
    <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/signup" element={<SignUp/>} />
@@ -31,7 +34,7 @@ function App() {
     <Route path="/donatecloth" element={<DonateCloth/>} />
     <Route path="/donatemoney" element={<DonateMoney/>} />
    </Routes>
-   </BrowserRouter>
+   </BrowserRouter>*/}
     </div>
   );
 }
