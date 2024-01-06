@@ -7,7 +7,10 @@ import donate_money from "../img/donate_money.jpg";
 import delivery from "../img/delivery.gif";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 
+
 const LandingPage = () => {
+  
+
   return (
 
      

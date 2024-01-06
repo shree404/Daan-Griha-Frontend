@@ -7,7 +7,7 @@
 }
 
 #second{
-  text-align: justify;
+  text-align: center;
   line-height: 1.5;
   margin:20px;
   margin-right: 35px;
@@ -37,7 +37,7 @@
   text-align: center;
   width: 60%;
   font-size: x-large;
-  margin-top: auto;
+  margin-top: 0px;
 }
 
 .food-donation-image{
@@ -53,3 +53,36 @@
   width: auto;
 }
 
+.image-container {
+  width: 100%;
+  height: 300px;
+  max-width: 1320px; /* Adjust the maximum width as needed */
+  max-height: 500px;
+  overflow: hidden;
+  margin: 0 auto; /* Center the container */
+  display: inline-block;
+  position: relative;
+  margin-top: 0px;
+  
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+.visible {
+  transform: translateX(0);
+}
+
+.image:nth-child(2) {
+  transform: translateX(100%);
+}
+
+.fooder{
+  background-color: green;
+  height: 50px;
+}
