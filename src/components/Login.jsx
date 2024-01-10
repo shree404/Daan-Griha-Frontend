@@ -15,8 +15,24 @@ function Login() {
       [name]: value,
     });
   };
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    try{
+      const response = await fetch('http://localhost:8080/demo',{
+        method:'POST',
+        headers : {
+          'Content-Type' : 'application/json'
+        },
+        body : JSON.stringify(formData),
+      });
+      console.log(response.json());
+      // const data= await response.json();
+    }
+      
+  
+      catch(error){
+        console.error('Error', error);
+      }
     console.log("Form submitted:", formData);
   };
   return (
@@ -81,7 +97,7 @@ function Login() {
         <p className="donthaveacc">Don't have Account?</p>
 
         <Link to="/signup">
-        <button className="signup-button-loginpage">Sign Up</button>
+        <button className="signup-button-loginpage" onClick={handleSubmit}>Sign Up</button>
         </Link>
 
       </div>
