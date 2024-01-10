@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import Nav from "./nav";
 import LandingPage from "./landingpage";
-import Background from "./background";
 import Donate from "./donate-button";
 
 function Home() {
@@ -14,7 +13,7 @@ function Home() {
       <div className="landingpage">
         <LandingPage />
       </div>
-      <Background />
+      
     </div>
   );
 }

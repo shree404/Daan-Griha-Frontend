@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./SignUp.css";
+<<<<<<< HEAD
 import { Form } from "react-router-dom";
+=======
+import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
+import Nav from "./nav";
+>>>>>>> 2e85fa38d7447298eeb729e62f4f033d10c62717
 
 function SingUp() {
   const [formData, setFormData] = useState({
@@ -1100,14 +1105,23 @@ function SingUp() {
     console.log("Form submitted:", formData);
   };
   return (
-<div className="signup-background">
-
+    <div className="">
+    <div className="navbar-signup">
+    <Nav />
+    </div>
+    <div className="signup-background">
     <div className="container">
+    <div className="" id="signup-title">
       <h2 className="header">Sign up</h2>
+<<<<<<< HEAD
 
       <hr className="form-divider" />
 
       <form onSubmit={handleSubmit} method="post">
+=======
+    </div>
+      <form onSubmit={handleSubmit}>
+>>>>>>> 2e85fa38d7447298eeb729e62f4f033d10c62717
         <div className="name">
           <div className="form-row">
             <label htmlFor="First Name" className="input-label">
@@ -1287,9 +1301,27 @@ function SingUp() {
           </div>
           </div>
         </div>
+<<<<<<< HEAD
         <button className="signup-button" onClick={handleSubmit} >Sign Up</button>
+=======
+       
+>>>>>>> 2e85fa38d7447298eeb729e62f4f033d10c62717
       </form>
+      <div>
+      <button className="signup-button">Sign Up</button>
+      </div>
+      <div className="haveacc">
+        <p className="have-acc">
+        Already have Account?
+             <Link to="/login">
+        <button className="login-button-signuppage">Log in</button>
+        </Link>
+        </p>
+
+      </div>
     </div>
+    
+</div>
 </div>
     
   );

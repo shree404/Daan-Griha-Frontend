@@ -5,15 +5,13 @@ import donate_foods from "../img/donate_foods.jpg";
 import donate_clothes from "../img/donate_clothes.jpg";
 import donate_money from "../img/donate_money.jpg";
 import delivery from "../img/delivery.gif";
-
-
+import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
 
      
     <div className="landing-page">
-
 
       <div className="home_cover_area">
          <img src={cover_for_home} alt="" className="home_cover" />
@@ -31,8 +29,9 @@ const LandingPage = () => {
 
 {/* area of green background just below the cover pages*/ }
        <div className="title_for_cover" id="">
-              
-
+       <Link to="/login">
+              <button className="Donate-button-home">Donate</button>
+       </Link>
            </div>
  {/* area for our works sections*/ } 
        <div className="header1">
@@ -42,30 +41,35 @@ const LandingPage = () => {
 
 
 
-
+        
        <div className="photogrid" id="">
 
+            <Link to="/DonateFood">
              <div className="grid1" id="donate_foods_area">
 
                <img src={donate_foods} alt="" className="donate_img1" />
                <p>Donate Food</p>
 
              </div>
+             </Link>
 
-             <div className="grid1" id="donate_clothes_area">
+             <Link to="/DonateCloth">
+             <div className="grid2" id="donate_clothes_area">
 
                <img src={donate_clothes} alt="" className="donate_img1" />
                <p>Donate Clothes</p>
 
              </div>
+            </Link>
 
-             <div className="grid1" id="donate_money_area">
+            <Link to="/DonateMoney">
+             <div className="grid3" id="donate_money_area">
 
                <img src={donate_money} alt="" className="donate_img1" />
                <p>Donate Money</p>
 
              </div>
-
+           </Link>
 
          </div>
 

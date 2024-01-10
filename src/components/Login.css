@@ -3,13 +3,13 @@
 }
 /* css style for background*/
 .bg{
-  background-image: url(../img/login_bg.jpg);
+  background-image: url(../img/login_bg1.jpg);
   opacity: 80%;
   display: block;
-  margin-top: 40px;
+  margin-top: 0px;
   width: auto;
   height: fit-content;
-  padding:20px; 
+  padding:22px; 
   
 }
 /*color change for background color*/
@@ -26,10 +26,7 @@
   border:none;
   display: block;
   border:  black;
-   
   padding: 1px;
-  
-  
   
 }
 #login_title_name{
@@ -122,7 +119,7 @@
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  background-color: green;
+  background-color: rgb(0, 98, 128);
   color: white;
   transition: background-color 0.3s ease-in-out;
   width: 80px;

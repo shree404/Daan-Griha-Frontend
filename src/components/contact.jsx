@@ -5,17 +5,20 @@ import Nav from "./nav"
 
 const Contact = () => {
     return (
-        
+        <div>
+        <div>
+            <Nav />
+         </div>
     <div className="" id="contact_page">
-        <div className='' id='nav_area'>
-        <Nav />
-
-        </div>
-
+      
         <div className="contact-container">
-            
+            <div className='contact-head'>
             <h1>Contact Us</h1>
+            </div>
+            <div id='contact-para'>
             <p>For any inquiries or support, please feel free to reach out to us.</p>
+            </div>
+            
             <form>
                 <label htmlFor="name" id="label-name-contact">Name:
                 <input type="text" id="contact-form-name" className="contact-form " name="name" />
@@ -28,8 +31,10 @@ const Contact = () => {
                 </label>
                 <button type="submit" id="contactbutton" >Submit</button>
             </form>
+            
         </div>
 
+    </div>
     </div>
     );
 };
