@@ -87,7 +87,7 @@ function Login() {
             </label>
           </div>
 
-        <button className="login-button"> Login</button>
+        <button className="login-button" onClick={handleSubmit}> Login</button>
         <div className="forget-password">
           <p> <Link to="/reset">Forget password?</Link></p>
           </div>
@@ -96,7 +96,7 @@ function Login() {
         <p className="donthaveacc">Don't have Account?</p>
 
         <Link to="/signup">
-        <button className="signup-button-loginpage" onClick={handleSubmit}>Sign Up</button>
+        <button className="signup-button-loginpage" >Sign Up</button>
         </Link>
 
       </div>
