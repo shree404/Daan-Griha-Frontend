@@ -4,7 +4,6 @@ import { Form } from "react-router-dom";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 import Nav from "./nav";
 
-
 function SingUp() {
   const [formData, setFormData] = useState({
     firstname: "",
@@ -1305,11 +1304,10 @@ function SingUp() {
 
       </div>
     </div>
-    
-</div>
-</div>
-    
-  );
+   </div>
+   </div>
+   </div>
+ );
 }
 
 export default SingUp;
