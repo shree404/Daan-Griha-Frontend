@@ -1110,7 +1110,6 @@ function SingUp() {
     <div className="container">
     <div className="" id="signup-title">
       <h2 className="header">Sign up</h2>
-
       <hr className="form-divider" />
 
       <form onSubmit={handleSubmit} method="post">
