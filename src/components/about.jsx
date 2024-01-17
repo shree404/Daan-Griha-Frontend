@@ -35,26 +35,7 @@ const About = () => {
              </ol>
             </div>
 
-            <div className="scope-container">
-             <h2>Scope</h2>
-             <ol className="objectives-list">
-            <li>Reduction of Food Waste: The primary scope of such a system is to reduce food waste by efficiently
-             managing leftover food from various sources such as restaurants, events, and households.</li>
-
-             <li>Resource Optimization: It can optimize the use of resources by diverting leftover food from 
-             landfills and putting it to better use, like feeding the hungry or converting it into bio energy through
-              composting.</li>
-
-            <li>Environmental Benefits: Reducing  waste can have positive environmental impacts, such as decreasing
-             methane emissions from decomposing food in landfills.</li>
-
-            <li>Social Responsibility: It aligns with social responsibility by contributing to hunger alleviation and 
-            poverty reduction.</li>
-
-            <li>Cost Savings: For businesses, it can reduce costs associated with food disposal and disposal fees while
-             potentially creating opportunities for tax incentives.</li>
-             </ol>
-            </div>
+            
             
 
 
@@ -66,9 +47,9 @@ const About = () => {
 
           <div className='fooder'>
 
-</div>
-
-        </div>)  
-};
+          </div>
+          </div>
+          );
+}
 
 export default About;

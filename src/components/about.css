@@ -1,6 +1,6 @@
 /* About.css */
 .about-container{
-  background: linear-gradient(to bottom, #62cf68da 25%, #ffffff 25%);
+  background: linear-gradient(to bottom, #62cf68da 30%, #ffffff 30%);
   color: white;
 }
 
@@ -38,13 +38,12 @@
 
 
 .objectives-container {
-  text-align: justify;
+  text-align: ju;
   padding: 20px;
   color: #333;
   margin: 50px;
   display: block;
-  background-color: aliceblue;
-  border: 1px solid black;
+  background-color: rgb(231, 232, 233);
   margin-top: -20px;
   border-radius: 12px;
 }
