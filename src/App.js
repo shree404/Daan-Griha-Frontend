@@ -12,7 +12,7 @@ import About from "./components/about";
 import DonateFood from "./components/donatefood";
 import DonateCloth from "./components/donatecloth";
 import DonateMoney from "./components/donatemoney";
-
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
     <Route path="/donatefood" element={<DonateFood/>} />
     <Route path="/donatecloth" element={<DonateCloth/>} />
     <Route path="/donatemoney" element={<DonateMoney/>} />
+    <Route path="/footer" element={<Footer/>} />
    </Routes>
    </BrowserRouter>
     </div>

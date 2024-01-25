@@ -2,6 +2,7 @@ import React from 'react';
 import "./about.css";
 import myImage from '../img/about.jpg';
 import Nav from "./nav";
+import Footer from "./footer";
 
 const About = () => {
     const emailAddress = 'Daangriha@gmail.com';
@@ -45,9 +46,10 @@ const About = () => {
               <a href={`mailto:${emailAddress}`}>{emailAddress}</a></p>
           </div>
 
-          <div className='fooder'>
-
-          </div>
+          <div>
+        <Footer/>
+      </div>
+      
           </div>
           );
 }

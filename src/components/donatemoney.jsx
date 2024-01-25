@@ -3,6 +3,7 @@ import './donatefood.css';
 import Nav from "./nav";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 import donate_money from "../img/donate_money.jpg";
+import Footer from "./footer";
 
 const DonateFood = () =>{
   return (
@@ -49,6 +50,10 @@ const DonateFood = () =>{
         </div>
 
       </div>
+      <div>
+        <Footer/>
+      </div>
+
     </div>
   );
 };

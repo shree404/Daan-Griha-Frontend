@@ -6,11 +6,13 @@ import donate_clothes from "../img/donate_clothes.jpg";
 import donate_money from "../img/donate_money.jpg";
 import delivery from "../img/delivery.gif";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
+import Footer from "./footer";
 
 
 const LandingPage = () => {
-  
 
+
+ 
   return (
 
      
@@ -117,7 +119,9 @@ const LandingPage = () => {
 
 */ }
 
-
+<div>
+        <Footer/>
+      </div>
 
     </div>
   );

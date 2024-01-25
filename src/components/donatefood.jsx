@@ -6,7 +6,7 @@ import donate_foods from "../img/donate_foods.jpg";
 import  { useState, useEffect } from 'react';
 import rawfoodImage from '../img/raw-food.png';
 import packedfoodImage from '../img/packed-food.png';
-
+import Footer from "./footer";
 
 const DonateFood = () =>{
 
@@ -85,9 +85,10 @@ const DonateFood = () =>{
         communities and ensure that no one goes hungry.
         </div>
 
-<div className='fooder'>
+        <div>
+        <Footer/>
+      </div>
 
-</div>
 
     </div>
   );
