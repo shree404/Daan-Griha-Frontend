@@ -10,16 +10,7 @@ import Footer from "./footer";
 
 const DonateFood = () =>{
 
-  const [currentImage, setCurrentImage] = useState(1);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage === 1 ? 2 : 1));
-    }, 3500); // Adjust the interval (in milliseconds) for auto-swapping
-
-    return () => clearInterval(intervalId); // Clear the interval on component unmount
-  }, []);
-
+  
 
   return (
     <div>
@@ -66,19 +57,7 @@ const DonateFood = () =>{
       </div>
 
 
-      <div className="image-container">
-      <img
-        src={currentImage === 1 ? rawfoodImage : packedfoodImage}
-        alt={currentImage === 1 ? 'Raw Food' : 'Packed Food'}
-        className={`image ${currentImage === 1 ? 'visible' : ''}`}
-      />
-      <img
-        src={currentImage === 2 ? rawfoodImage : packedfoodImage}
-        alt={currentImage === 2 ? 'Raw Food' : 'Packed Food'}
-        className={`image ${currentImage === 2 ? 'visible' : ''}`}
-      />
-    </div>
-
+      
     <div id='second'>
         Help make a difference in someone's life by donating food. Your contribution can provide
         nourishment and support to those in need. Together, we can make a positive impact on
