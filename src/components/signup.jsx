@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SignUp.css";
+import { Form } from "react-router-dom";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 import Nav from "./nav";
 
@@ -16,11 +17,50 @@ function SingUp() {
     password: "",
     confirmpassword: "",
   });
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
+  // const handleInputChange =  async (event) => {
+  //   const newData = event.target.value;
+  //   try{
+  //   const response = await fetch('http://localhost:8080/demo',{
+  //     method:'POST',
+  //     body : JSON.stringify({formData : newData }),
+  //     headers : {
+  //       'Content-Type' : 'application/json'
+  //     }
+  //   })
+  //   const data= await response.json();
+  // }
+  //   // console.log(data);
+
+  //   catch(error){
+  //     console.error('Error', error);
+  //   }
+  //   setFormData(newData);
+  //   const { name, value } = event.target.value;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
+
+  const handleInputChange = async (event) => {
+    // try{
+    //     const response = await fetch('http://localhost:8080/demo',{
+    //       method:'POST',
+    //       headers : {
+    //         'Content-Type' : 'application/json'
+    //       },
+    //       body : JSON.stringify(formData),
+    //     })
+    //     // const data= await response.json();
+    //   }
+    //     // console.log(data);
+    
+    //     catch(error){
+    //       console.error('Error', error);
+    //     }
     setFormData({
       ...formData,
-      [name]: value,
+      [event.target.name]: event.target.value,
     });
   };
 
@@ -1040,8 +1080,25 @@ function SingUp() {
     return districtMunicipalities[district] || [];
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async  (event) => {
+
     event.preventDefault();
+    try{
+      const response = await fetch('http://localhost:8080/demo',{
+        method:'POST',
+        headers : {
+          'Content-Type' : 'application/json'
+        },
+        body : JSON.stringify(formData),
+      });
+      console.log(response.json());
+      // const data= await response.json();
+    }
+      
+  
+      catch(error){
+        console.error('Error', error);
+      }
     console.log("Form submitted:", formData);
   };
   return (
@@ -1053,8 +1110,9 @@ function SingUp() {
     <div className="container">
     <div className="" id="signup-title">
       <h2 className="header">Sign up</h2>
-    </div>
-      <form onSubmit={handleSubmit}>
+      <hr className="form-divider" />
+
+      <form onSubmit={handleSubmit} method="post">
         <div className="name">
           <div className="form-row">
             <label htmlFor="First Name" className="input-label">
@@ -1073,7 +1131,7 @@ function SingUp() {
           </div>
           <div className="last-name">
           <div className="\form-row">
-            <label htmlFor="Last Name" className="input-label">
+            <label htmlFor="Last Name"  className="input-label">
               {" "}
               Last Name:
               <input
@@ -1091,7 +1149,7 @@ function SingUp() {
         </div>
         <div className="address">
           <div className="form-row">
-            <label htmlFor="Province" className="input-label">
+            <label htmlFor="Province"   className="input-label">
               {" "}
               Province:
               <select
@@ -1113,7 +1171,7 @@ function SingUp() {
           </div>
           <div className="form-row">
             {formData.province && (
-              <label htmlFor="district" className="input-label">
+              <label htmlFor="district" id="labeldistrict" className="input-label">
                 District:{" "}
                 <select
                   name="district"
@@ -1133,7 +1191,7 @@ function SingUp() {
           </div>
           <div className="form-row">
             {formData.district && (
-              <label htmlFor="Municipality" className="input-label">
+              <label htmlFor="Municipality"  className="input-label">
                 Municipality:{" "}
                 <select
                   name="municipality"
@@ -1154,7 +1212,7 @@ function SingUp() {
         </div>
         <div className="contact-info">
           <div className="form-row">
-            <label htmlFor="Contact" className="input-label">
+            <label htmlFor="Contact No"  className="input-label">
               {" "}
               Contact No:
               <input
@@ -1169,7 +1227,7 @@ function SingUp() {
             </label>
           </div>
           <div className="form-row">
-            <label htmlFor="Email" className="input-label">
+            <label htmlFor="Email"  className="input-label">
               {" "}
               Email:
               <input
@@ -1185,7 +1243,7 @@ function SingUp() {
           </div>
         </div>
         <div className="username-signup">
-          <label htmlFor="username" className="input-label">
+          <label htmlFor="username"  className="input-label">
             {" "}
             Username:
             <input
@@ -1201,7 +1259,7 @@ function SingUp() {
         </div>
         <div className="password">
           <div className="form-row">
-            <label htmlFor="password" className="input-label">
+            <label htmlFor="password"  className="input-label">
               {" "}
               Password:
               <input
@@ -1218,7 +1276,7 @@ function SingUp() {
           </div>
           <div className="confirm-password">
           <div className="form-row">
-            <label htmlFor="confirmpassword" className="input-label">
+            <label htmlFor="confirmpassword"  className="input-label">
               {" "}
               Confirm Password:
               <input
@@ -1234,11 +1292,8 @@ function SingUp() {
           </div>
           </div>
         </div>
-       
+        <button className="signup-button" onClick={handleSubmit} >Sign Up</button>
       </form>
-      <div>
-      <button className="signup-button">Sign Up</button>
-      </div>
       <div className="haveacc">
         <p className="have-acc">
         Already have Account?
@@ -1249,11 +1304,10 @@ function SingUp() {
 
       </div>
     </div>
-    
-</div>
-</div>
-    
-  );
+   </div>
+   </div>
+   </div>
+ );
 }
 
 export default SingUp;
