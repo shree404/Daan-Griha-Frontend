@@ -3,11 +3,21 @@ import './donatefood.css';
 import Nav from "./nav";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 import donate_foods from "../img/donate_foods.jpg";
+import  { useState, useEffect } from 'react';
+import rawfoodImage from '../img/raw-food.png';
+import packedfoodImage from '../img/packed-food.png';
+import Footer from "./footer";
 
 const DonateFood = () =>{
+
+  
+
   return (
     <div>
+
   <Nav />
+ 
+
   <div className='donate-header'>
   <h2>Donate Food</h2>
   </div>
@@ -41,13 +51,24 @@ const DonateFood = () =>{
       <div className='food-donation-img'>
       <img src={donate_foods} alt="" className="food-donation-image" />
       </div>
-      <div id='second'>
+
+      
+
+      </div>
+
+
+      
+    <div id='second'>
         Help make a difference in someone's life by donating food. Your contribution can provide
         nourishment and support to those in need. Together, we can make a positive impact on
         communities and ensure that no one goes hungry.
         </div>
 
+        <div>
+        <Footer/>
       </div>
+
+
     </div>
   );
 };

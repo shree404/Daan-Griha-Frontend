@@ -1,13 +1,13 @@
 /* About.css */
 .about-container{
-  background: linear-gradient(to bottom, #62cf68da 50%, #ffffff 50%);
+  background: linear-gradient(to bottom, #62cf68da 25%, #ffffff 25%);
   color: white;
 }
 
   
   .about-title {
-    margin-top: 40px;
-    font-size: 40px;
+    margin-top: 50px;
+    font-size: 50px;
     margin-bottom: 10px;
     text-align: center;
     color: #333;
@@ -16,13 +16,14 @@
   .about-description {
     color: #333;
     margin: 50px;
-  margin-top:15px ;
+  margin-top:10px ;
   padding: 30px;
   text-align: center;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 18px;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.3;
+  display: block;
 }
   
 .about-image {
@@ -32,5 +33,78 @@
   max-width: 100%;
   height: 350px;
   border-radius: 4px;
-  margin-top: 40px; 
+  margin-top: 50px; 
 }
+
+
+.objectives-container {
+  text-align: ju;
+  padding: 20px;
+  color: #333;
+  margin: 50px;
+  display: block;
+  background-color: rgb(231, 232, 233);
+  margin-top: -20px;
+  border-radius: 12px;
+}
+
+.scope-container {
+  display: block;
+  text-align: justify;
+  padding: 20px;
+  color: #333;
+  margin: 50px;
+  background-color:aliceblue;
+  border: 1px solid black;
+  margin-top: -10px;
+  border-radius: 12px;
+}
+
+.scope-container h2 {
+  color: #4caf50; /* Green text color for the heading */
+ font-size: 30px;
+ margin-top: 0px;
+}
+
+.objectives-container h2 {
+  color: #4caf50; /* Green text color for the heading */
+ font-size: 30px;
+ margin-top: 0px;
+}
+
+.objectives-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 15px;
+  margin-top: -20px;
+}
+
+.objectives-list li {
+  padding: 10px;
+}
+
+
+#about-description{
+  text-align: center;
+  color: #333;
+    margin: 20px;
+  margin-top:10px ;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.expected-outcome{
+  text-align: justify;
+  padding: 0px;
+  color: #333;
+  margin: 50px;
+  background-color:aliceblue;
+  border: 1px solid black;
+  margin-top: -10px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+

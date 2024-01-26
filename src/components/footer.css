@@ -1,0 +1,43 @@
+.footer {
+    
+        background-image: url(../img/footer.jpg);
+        opacity: 90%;
+        display: block;
+        margin-top: 0px;
+        width: auto;
+        height: 300px;
+        padding:59px; 
+      margin-top: auto;
+  }
+  .footer-section{
+    text-align: center;
+    color: black;
+  }
+  .footer-section ul{
+    font-size: px;
+  }
+
+
+  .footer-section p{
+    color: black;
+    text-align: center;
+    margin-left: -40px;
+  }
+
+  .footer-section h3{
+    font-size: 30px;
+    margin-top: -25px;
+  }
+
+  .footer-section h2{
+    font-size: 30px;
+  }
+ 
+  .footer-section p{
+    font-size: 20px;
+  }
+ 
+  .footer-copyright{
+    text-align: center;
+    color: black;
+  }
