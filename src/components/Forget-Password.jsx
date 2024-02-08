@@ -38,11 +38,12 @@ function Forget_Password() {
     console.log("Form submitted:", formData);
   };
   return (
+    <div className="forget-background">
     <div>
  <Link to="/login">
     <button className="back-button">Back</button>
     </Link>
-
+   </div>
     <div className="Forget-Password-Container">
       <div className="" id="forget_title">
         <p id="forget_title_name">

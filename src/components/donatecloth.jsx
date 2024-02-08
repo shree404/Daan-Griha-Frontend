@@ -3,6 +3,7 @@ import './donatefood.css';
 import Nav from "./nav";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 import donate_cloth from "../img/donate_clothes.jpg";
+import Footer from "./footer";
 
 const DonateCloth = () =>{
   return (
@@ -47,6 +48,10 @@ const DonateCloth = () =>{
       Thank you for being a part of positive change through the simple act of giving."
         </div>
 
+      </div>
+
+      <div>
+        <Footer/>
       </div>
     </div>
   );
