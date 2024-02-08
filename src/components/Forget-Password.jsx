@@ -17,8 +17,24 @@ function Forget_Password() {
     });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    try{
+      const response = await fetch('http://localhost:8080/api/user/reset',{
+        method:'POST',
+        headers : {
+          'Content-Type' : 'application/json'
+        },
+        body : JSON.stringify(formData),
+      });
+      console.log(response.json());
+      // const data= await response.json();
+    }
+      
+  
+      catch(error){
+        console.error('Error', error);
+      }
     console.log("Form submitted:", formData);
   };
   return (
@@ -101,7 +117,7 @@ function Forget_Password() {
           </label>
         </div>
       </form>
-      <button className="reset-buton"> Reset Password</button>
+      <button className="reset-buton" onClick={handleSubmit}> Reset Password</button>
     </div>
     </div>
   );
