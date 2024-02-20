@@ -5,8 +5,8 @@ import Nav from "./nav";
 
 function Login() {
   const [formData, setFormData] = useState({
-    loginid: "",
-    loginpassword: "",
+    username: "",
+    password: "",
   });
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -61,7 +61,7 @@ function Login() {
             Username:
             <input
               type="text"
-              name="loginid"
+              name="username"
               id="loginid"
               className="login-input"
               placeholder="Username"
@@ -77,7 +77,7 @@ function Login() {
             Password:
             <input
               type="password"
-              name="loginpassword"
+              name="password"
               id="loginpassword"
               className="login-input"
               placeholder="Password"
