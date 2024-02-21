@@ -152,3 +152,8 @@ td span {
     font-weight: 700;
     border-color: #FFFFFF;
 }
+.test{
+    position: absolute;
+    margin-left:  300px;
+    margin-top: 50px;
+}

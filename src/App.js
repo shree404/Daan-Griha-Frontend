@@ -4,6 +4,7 @@ import { BrowserRouter , Routes, Route, Link } from "react-router-dom";
 import Home from "./components/home";
 import SignUp from "./components/signup";
 import Login from "./components/Login";
+import AdminLogin from "./components/admin-login";
 import Forget_Password from "./components/Forget-Password";
 import Contact from "./components/contact";
 import Dashboard from "./components/dashboard";
@@ -18,12 +19,19 @@ import DashBoard from './pages/Dashboard/dashboard';
 import Users from './pages/Users/users';
 import Oragnization from './pages/Organizations/organization';
 
+
+// admin side
+import Admin_DashBoard from './pages/Admin/admin-dashboard';
+import Admin_Users from './pages/Admin/admin-users';
+
+
+
 function App() {
   return (
    
     <div>
      <BrowserRouter>
-     < Users/>
+     < Admin_DashBoard/>
      {/* <Routes>
            <Route path="*" element={<DashBoard/>} />
           <Route exact path="/users" element={< Users/>} />
@@ -36,6 +44,7 @@ function App() {
     <Route path="/" element={<Home/>} />
     <Route path="/signup" element={<SignUp/>} />
     <Route path="/login" element={<Login/>} />
+    <Route path="/adminlogin" element={<AdminLogin/>} />
     <Route path="/reset" element={<Forget_Password/>} />
     <Route path="/contact" element={<Contact/>} />
     <Route path ="/dashboard" element={<Dashboard/>}/>

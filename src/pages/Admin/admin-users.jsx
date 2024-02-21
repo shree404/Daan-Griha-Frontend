@@ -13,6 +13,10 @@ import RefundedIcon from '../../assets/icons/refunded.svg';
 import SideBar from '../../components/Sidebar/userSidebar';
 import sidebar_menu from '../../constants/sidebar-menu';
 
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+
+
 
 
 function Users () {
@@ -51,7 +55,13 @@ function Users () {
     return(
         <div className='dashboard-content'>
             <SideBar menu={sidebar_menu} />
-            
+            <div className='test'>
+                
+                <Stack direction="row" spacing={2}>
+                <Button variant="contained">ADD Users</Button>
+                   
+                </Stack>
+                </div>
 
             <div className='dashboard-content-container'>
                 <div className='dashboard-content-header'>

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Login.css";
+import "./admin-login.css";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 import Nav from "./nav";
 
-function Login() {
+function AdminLogin() {
   const [formData, setFormData] = useState({
     loginid: "",
     loginpassword: "",
@@ -49,7 +49,7 @@ function Login() {
 
 {/* div  for login_titles backgrounnd (green) and login text( login form)*/}
           <div className="" id="login_title">
-               <p id="login_title_name" >Login Form</p>
+               <p id="login_title_name" >Admin Login Form</p>
            </div>
 
 
@@ -88,10 +88,6 @@ function Login() {
           </div>
 
         <button className="login-button" onClick={handleSubmit}> Login</button>
-
-        <Link to="/adminlogin">
-        <button className="admin-button" > Admin</button>
-        </Link>
         <div className="forget-password">
           <p> <Link to="/reset">Forget password?</Link></p>
           </div>
@@ -116,4 +112,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default AdminLogin;
