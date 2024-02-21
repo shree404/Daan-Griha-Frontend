@@ -14,12 +14,25 @@ import DonateCloth from "./components/donatecloth";
 import DonateMoney from "./components/donatemoney";
 import Footer from "./components/footer";
 
+import DashBoard from './pages/Dashboard/dashboard';
+import Users from './pages/Users/users';
+import Oragnization from './pages/Organizations/organization';
+
 function App() {
   return (
    
     <div>
      <BrowserRouter>
-   <Routes>
+     < Users/>
+     {/* <Routes>
+           <Route path="*" element={<DashBoard/>} />
+          <Route exact path="/users" element={< Users/>} />
+          <Route exact path="/organization" element={<Oragnization/>} />
+          <Route exact path="/profile" element={<div></div>} />
+
+
+      </Routes> */}
+   {/* <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/signup" element={<SignUp/>} />
     <Route path="/login" element={<Login/>} />
@@ -32,7 +45,7 @@ function App() {
     <Route path="/donatecloth" element={<DonateCloth/>} />
     <Route path="/donatemoney" element={<DonateMoney/>} />
     <Route path="/footer" element={<Footer/>} />
-   </Routes>
+   </Routes> */}
    </BrowserRouter>
     </div>
   );
