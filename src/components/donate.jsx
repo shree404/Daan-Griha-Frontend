@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import "./donate.css";
+import { Link } from 'react-router-dom';
 
 const DonateForm = () => {
-    const [amount, setAmount] = useState(0);
+    const [amount, setAmount] = useState('');
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [contact, setContact] = useState('');
+    const [contact, setContact] = useState('+977');
 
     const handleAmountChange = (e) => {
         setAmount(e.target.value);
@@ -50,19 +51,19 @@ const DonateForm = () => {
             </label>
             <label>
                 Contact:
-                <input type="number" value={contact} onChange={handleContactChange} />
+                <input type="string" value={contact} onChange={handleContactChange} />
             </label>
 
             <label>
                 Email:
                 <input type="email" value={email} onChange={handleEmailChange} />
             </label>
-            <br />
+            
             <label className="donate-label">
                 Amount:
-                <input type="number" value={amount} onChange={handleAmountChange} />
+                <input type="text" value={amount} onChange={handleAmountChange} />
             </label>
-            <br />
+            
             <label>
 
        Types of Donation:
@@ -84,7 +85,8 @@ const DonateForm = () => {
            
             <br />
             <button type="submit" className="submit-donate">Donate</button>
-            <button type="" className="submit-donate">back</button>
+
+           <Link to="/"> <button type="" className="submit-donate">back</button></Link>
         </form>
         </div>
      </div> 

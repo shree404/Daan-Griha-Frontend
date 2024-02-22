@@ -157,3 +157,29 @@ td span {
     margin-left:  300px;
     margin-top: 50px;
 }
+.userdash-area{
+    position: absolute;
+    margin-left:  350px;
+    margin-top: 150px;
+
+}
+.donate_button{
+    width: 250px;
+    margin: 50px;
+   
+
+}
+.donate_button:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.feedback_button{
+    width: 250px;
+    margin: 50px;
+
+}
+.feedback_button:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+

@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter , Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter , Routes, Route, Link,NavLink } from "react-router-dom";
 import Home from "./components/home";
 import SignUp from "./components/signup";
 import Login from "./components/Login";
@@ -34,23 +34,24 @@ function App() {
    
     <div>
      <BrowserRouter>
-     < Admin_DashBoard/>
-     {/* <Routes>
-           <Route path="*" element={<DashBoard/>} />
+     
+      {/* <Routes>
+           <Route path="/" element={<DashBoard/>} />
+           <Route path ="/donate" element={<Donate/>}/>
           <Route exact path="/users" element={< Users/>} />
           <Route exact path="/organization" element={<Oragnization/>} />
           <Route exact path="/profile" element={<div></div>} />
 
 
-      </Routes> */}
-   {/* <Routes>
+      </Routes>  */}
+ <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/signup" element={<SignUp/>} />
     <Route path="/login" element={<Login/>} />
     <Route path="/adminlogin" element={<AdminLogin/>} />
     <Route path="/reset" element={<Forget_Password/>} />
     <Route path="/contact" element={<Contact/>} />
-    <Route path ="/dashboard" element={<Dashboard/>}/>
+    <Route path ="/dashboard" element={<DashBoard/>}/>
     <Route path ="/donate" element={<Donate/>}/>
     <Route path="/about" element={<About/>} />
     <Route path="/donatefood" element={<DonateFood/>} />
@@ -58,7 +59,7 @@ function App() {
     <Route path="/donatemoney" element={<DonateMoney/>} />
     <Route path="/dash" element={<Dash/>} />
     <Route path="/footer" element={<Footer/>} />
-   </Routes> */}
+   </Routes> 
    </BrowserRouter>
     </div>
   );
