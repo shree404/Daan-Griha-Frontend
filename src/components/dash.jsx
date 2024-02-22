@@ -10,7 +10,7 @@ import Dash_ngo from "../img/dash_ngo.png";
 import { Link } from "react-router-dom";
 
 
-function dash() {
+function Dash() {
   return (
     <div className="dash-back" id="">
 
@@ -155,4 +155,4 @@ function dash() {
   );
 }
 
-export default dash;
+export default Dash;

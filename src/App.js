@@ -13,7 +13,9 @@ import About from "./components/about";
 import DonateFood from "./components/donatefood";
 import DonateCloth from "./components/donatecloth";
 import DonateMoney from "./components/donatemoney";
+import Dash from './components/dash';
 import Footer from "./components/footer";
+
 
 import DashBoard from './pages/Dashboard/dashboard';
 import Users from './pages/Users/users';
@@ -23,6 +25,7 @@ import Oragnization from './pages/Organizations/organization';
 // admin side
 import Admin_DashBoard from './pages/Admin/admin-dashboard';
 import Admin_Users from './pages/Admin/admin-users';
+
 
 
 
@@ -53,6 +56,7 @@ function App() {
     <Route path="/donatefood" element={<DonateFood/>} />
     <Route path="/donatecloth" element={<DonateCloth/>} />
     <Route path="/donatemoney" element={<DonateMoney/>} />
+    <Route path="/dash" element={<Dash/>} />
     <Route path="/footer" element={<Footer/>} />
    </Routes> */}
    </BrowserRouter>

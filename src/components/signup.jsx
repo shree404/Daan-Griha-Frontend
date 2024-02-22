@@ -1084,7 +1084,7 @@ function SingUp() {
 
     event.preventDefault();
     try{
-      const response = await fetch('http://localhost:8080/demo',{
+      const response = await fetch('http://localhost:8080/api/user/signup',{
         method:'POST',
         headers : {
           'Content-Type' : 'application/json'
