@@ -716,7 +716,7 @@ function SingUp() {
       ],
       Parvat:[
         "Modi Rural Municipality",
-        "Painyu Rural Municipality",
+        "Paiyun Rural Municipality",
         "Jaljala Rural Municipality",
         "Bihadi Rural Municipality",
         "Mahashila Rural Municipality	",
@@ -1084,7 +1084,7 @@ function SingUp() {
 
     event.preventDefault();
     try{
-      const response = await fetch('http://localhost:8080/api/user/signup',{
+      const response = await fetch('http://localhost:8080/api/user/register',{
         method:'POST',
         headers : {
           'Content-Type' : 'application/json'
