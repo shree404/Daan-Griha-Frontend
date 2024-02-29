@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router,Routes, Route, Link, useNavigate} from "react-router-dom";
 import Nav from "./nav";
+import axios from "axios";
 
 function Login() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: "",
     password: "",
@@ -18,22 +20,29 @@ function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try{
-      const response = await fetch('http://localhost:8080/api/user/login',{
-        method:'POST',
+      const response = await axios.post ('http://localhost:8080/api/user/login', formData, {
         headers : {
           'Content-Type' : 'application/json'
         },
-        body : JSON.stringify(formData),
+        // body : JSON.stringify(formData),
       });
-      console.log(response.json());
-      // const data= await response.json();
+      if (response.status === 200){
+        const { token, userId,  redirectUrl} = response.data;
+
+        // Save the token in localStorage or your preferred state management
+        localStorage.setItem("token", token);
+        
+        // Redirect to the specified URL (e.g., /dashboard)
+        navigate(redirectUrl);
+      }
+      else {
+        console.log("Login failed");
+      }
     }
-      
-  
       catch(error){
         console.error('Error', error);
       }
-    console.log("Form submitted:", formData);
+    // console.log("Form submitted:", formData);
   };
   return (
     <div>
@@ -62,10 +71,10 @@ function Login() {
             <input
               type="text"
               name="username"
-              id="loginid"
+              id="username"
               className="login-input"
               placeholder="Username"
-              value={formData.loginid}
+              value={formData.username}
                 onChange={handleInputChange}
             />
             </label>
@@ -78,20 +87,16 @@ function Login() {
             <input
               type="password"
               name="password"
-              id="loginpassword"
+              id="password"
               className="login-input"
               placeholder="Password"
-              value={formData.loginpassword}
+              value={formData.password}
                 onChange={handleInputChange}
               />
             </label>
           </div>
 
-        <button className="login-button" onClick={handleSubmit}> Login</button>
-
-        <Link to="/adminlogin">
-        <button className="admin-button" > Admin</button>
-        </Link>
+        <button className="login-button" type="submit" onClick={handleSubmit}> Login</button>
         <div className="forget-password">
           <p> <Link to="/reset">Forget password?</Link></p>
           </div>
