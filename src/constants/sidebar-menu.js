@@ -2,6 +2,7 @@ import DashboardIcon from '../assets/icons/dashboard.svg';
 import OrganizationIcon from '../assets/icons/organization.svg';
 import UserlistIcon from '../assets/icons/user-list.svg';
 import UserIcon from '../assets/icons/user.svg';
+import UserDetail from '../pages/Users/userdetails';
 
 // we can customize path and nav title from here like dashboard and its path whyen its click
 const sidebar_menu = [
@@ -28,6 +29,8 @@ const sidebar_menu = [
         icon: UserIcon,
         path: '/profile',
         title: 'My account',
+        onclick : UserDetail,
+       
     }
 ]
 
