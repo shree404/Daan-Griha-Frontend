@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./donate.css";
 
 const DonateForm = () => {
+    const [addressType, setAddressType] = useState('defaultAddress');
     const [amount, setAmount] = useState(0);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -32,6 +33,9 @@ const DonateForm = () => {
         setEmail('');
         setContact('');
     };
+    const handleAddressChange = (event) => {
+        setAddressType(event.target.value);
+      };
 
     return (
 
@@ -46,24 +50,44 @@ const DonateForm = () => {
 
              <label>
                 Name:
-                <input type="text" value={name} onChange={handleNameChange} />
+                <input type="text" value={name} name="dname" onChange={handleNameChange} />
             </label>
             <label>
                 Contact:
-                <input type="number" value={contact} onChange={handleContactChange} />
+                <input type="number" value={contact} name="dcontact"    onChange={handleContactChange} />
             </label>
 
             <label>
                 Email:
-                <input type="email" value={email} onChange={handleEmailChange} />
+                <input type="email" value={email} name="demail"    onChange={handleEmailChange} />
             </label>
             <br />
             <label className="donate-label">
                 Amount:
-                <input type="number" value={amount} onChange={handleAmountChange} />
+                <input type="number" value={amount} name="damount"    onChange={handleAmountChange} />
             </label>
             <br />
             <label>
+                <label htmlFor="Location" className='addressType'>Location
+                <br />
+                Default Address
+                    <input type="radio" name="addressType" id="defaultAddress" value="defaultAddress"/>
+                    <br />
+                    New Address
+                    <input type="radio" name="addressType" id="newAddress" value="newAddress" checked={addressType === 'newAddress'}
+          onChange={handleAddressChange} />
+                 <br />
+                </label>
+                {addressType === 'newAddress' && (
+        <div>
+          <label htmlFor="newAddressLine1"> New Address </label>
+          <input type="text" id="newprovince" name="newProvince" placeholder='Province' />
+          <input type="text" id="newdistrict" name="newdistrict" placeholder='District' />
+          <input type="text" id="newmunicipality" name="newmunicipality" placeholder='Municipality' />
+          {/* Add more text fields as needed */}
+        </div>
+      )}
+
 
        Types of Donation:
 

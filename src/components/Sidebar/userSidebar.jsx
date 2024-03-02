@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import SideBarItem from './sidebar-item';
 
@@ -8,6 +9,7 @@ import logo from '../../assets/images/white-logo.png';
 import LogoutIcon from '../../assets/icons/logout.svg';
 
 function SideBar ({ menu }) {
+    const navigate = useNavigate();
     const location = useLocation();
 
     const [active, setActive] = useState(1);
@@ -23,6 +25,11 @@ function SideBar ({ menu }) {
     const __navigate = (id) => {
         setActive(id);
     }
+    const redirectToRoot = () => {
+        // Redirect to the root path '/'
+        navigate('/');
+      };
+    
 
     return(
         <nav className='sidebar'>
@@ -45,7 +52,8 @@ function SideBar ({ menu }) {
                     </div>
 
                     <div className='sidebar-footer'>
-                        <span className='sidebar-item-label'>Logout</span>
+                        <span className='sidebar-item-label'>
+                            <a href="" onClick={redirectToRoot}>Logout </a></span>
                         <img 
                             src={LogoutIcon}
                             alt='icon-logout'

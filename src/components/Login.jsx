@@ -10,6 +10,11 @@ function Login() {
     username: "",
     password: "",
   });
+
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({
@@ -19,6 +24,8 @@ function Login() {
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);
+    setError(null);
     try{
       const response = await axios.post ('http://localhost:8080/api/user/login', formData, {
         headers : {
@@ -40,7 +47,11 @@ function Login() {
       }
     }
       catch(error){
+        setError('Login failed. Check your username and password.');
         console.error('Error', error);
+      }
+      finally {
+        setLoading(false);
       }
     // console.log("Form submitted:", formData);
   };
@@ -96,11 +107,13 @@ function Login() {
             </label>
           </div>
 
-        <button className="login-button" type="submit" onClick={handleSubmit}> Login</button>
+        <button className="login-button" type="submit" onClick={handleSubmit}  disabled={loading}  >
+        {loading ? "Logging in..." : "Login"} Login</button>
         <div className="forget-password">
           <p> <Link to="/reset">Forget password?</Link></p>
           </div>
       </form>
+      {error && <p className="error-message">{error}</p>}
       <div className="newacc">
         <p className="donthaveacc">Don't have Account?</p>
 
